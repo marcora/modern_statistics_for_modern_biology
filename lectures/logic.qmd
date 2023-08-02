@@ -1,0 +1,96 @@
+---
+title: "Probability theory"
+author: "Edoardo Marcora"
+date: 2023-08-02
+---
+
+## Probability theory: The logic of science
+
+-   Propositions/claims are sentences that can either be true or false (xor).
+-   An argument is a set of propositions/claims; more specifically a set of premises together with a conclusion.
+-   An inference is the process of reasoning from the premises of an argument to its conclusion.
+-   Arguments/inferences are either correct or incorrect. If they are correct then their premises support their conclusion. If they are incorrect then their premises do not support their conclusion.
+-   Premises and conclusions, on the other hand, are true or false depending on whether they are in accord with reality.
+-   A deductive valid argument is one whose premises guarantee the truth of its conclusion. The conclusion follows with CERTAINTY from the premises. The premises entail the conclusion.
+-   An inductive \[strong/weak\] argument is one whose premises do not guarantee the truth of its conclusion but only that its conclusion is true with some \[high/low\] probability. The conclusion follows NOT with CERTAINTY, but only with some \[high/low\] PROBABILITY, from the premises (a "risky" inference). The premises partially entail the conclusion (strong/weak logical support).
+-   Probability as the degree of partial entailment (or logical support) that a conclusion has, relative to a set of premises.
+-   How strong is the inference? What is the probability of the conclusion, given the premises? Probability theory helps us answer this question!
+-   How high does the probability/how strong does the inference have to be before it's rational/reasonable to accept the conclusion? Decision theory (e.g., cost-benefit analysis) helps us answer this question!
+
+$$
+\begin{align}
+& \text{premise} \\
+& \text{premise} \\
+& \overline{\therefore \text{conclusion}}
+\end{align}
+$$
+
+$$
+\begin{align}
+& \text{evidence} \\
+& \text{evidence} \\
+& \overline{\therefore \text{hypothesis}}
+\end{align}
+$$
+
+-   Modus ponens
+
+$$
+\begin{align}
+& A \rightarrow B \\
+& A \\
+& \overline{\therefore B}
+\end{align}
+$$
+
+-   Modus tollens
+
+$$
+\begin{aligned}
+& A \rightarrow B \\
+& \text{not-}A \\
+& \overline{\therefore \text{not-}B}
+\end{aligned}
+$$
+
+## Probability as a mathematical function
+
+In mathematics, a function from a set $X$ to a set $Y$ is an assignment of an element $y$ of $Y$ to each element $x$ of $X$.
+
+INPUT: $x$
+
+FUNCTION: $f$
+
+OUTPUT: $y = f(x)$
+
+$f: X \rightarrow Y$
+
+Kolmogorov axioms vs. Cox's theorem
+
+## Interpretations of probability
+
+objective vs. subjective
+
+event vs. proposition language
+
+## Mutually exclusive events
+
+## Independent events
+
+## Rules of probability
+
+negation, disjunction, conjunction
+
+## Conditional probability
+
+## Inverse probability: Bayes' theorem
+
+From probability theory to statistical inference
+
+$\text{posterior} = \text{prior} \times \text{likelihood} \div \text{evidence}$
+
+## References
+
+-   Reasoning with Probabilities \[[youtube playlist](https://youtube.com/playlist?list=PL1D85E19690485A3E)\]
+-   Introduction to Probability \[[book](http://athenasc.com/probbook.html)\] \[[online course](https://www.edx.org/course/probability-the-science-of-uncertainty-and-data-0)\] \[[youtube playlist](https://youtube.com/playlist?list=PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6)\]
+-   Bernoulli's Fallacy \[[book](http://cup.columbia.edu/book/bernoullis-fallacy/9780231199957)\]

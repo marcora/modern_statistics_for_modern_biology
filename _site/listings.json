@@ -1,0 +1,20 @@
+[
+  {
+    "listing": "/labs/index.html",
+    "items": []
+  },
+  {
+    "listing": "/assignments/index.html",
+    "items": []
+  },
+  {
+    "listing": "/notes/index.html",
+    "items": []
+  },
+  {
+    "listing": "/lectures/index.html",
+    "items": [
+      "/lectures/logic.html"
+    ]
+  }
+]

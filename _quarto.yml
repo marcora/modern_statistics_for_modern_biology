@@ -1,0 +1,23 @@
+project:
+  type: website
+
+website:
+  title: "Modern statistics for modern biology"
+  navbar:
+    left:
+      - index.qmd
+      - lectures/index.qmd
+      - labs/index.qmd
+      - notes/index.qmd
+      - assignments/index.qmd
+      - resources.qmd
+      - about.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
+
