@@ -77,13 +77,17 @@ event vs. proposition language
 
 ## Independent events
 
-## Rules of probability
+## Probability rules
 
-negation, disjunction, conjunction
+negation
+
+disjunction (OR, sum/addition rule)
+
+conjunction (AND, product/multiplication rule)
 
 ## Conditional probability
 
-## Inverse probability: Bayes' theorem
+## Inverse probability: Bayes' theorem (or Bayes' rule)
 
 From probability theory to statistical inference
 

@@ -70,11 +70,11 @@
     "text": "Independent events"
   },
   {
-    "objectID": "lectures/logic.html#rules-of-probability",
-    "href": "lectures/logic.html#rules-of-probability",
+    "objectID": "lectures/logic.html#probability-rules",
+    "href": "lectures/logic.html#probability-rules",
     "title": "Probability theory",
-    "section": "Rules of probability",
-    "text": "Rules of probability\nnegation, disjunction, conjunction"
+    "section": "Probability rules",
+    "text": "Probability rules\nnegation\ndisjunction (OR, sum/addition rule)\nconjunction (AND, product/multiplication rule)"
   },
   {
     "objectID": "lectures/logic.html#conditional-probability",
@@ -84,11 +84,11 @@
     "text": "Conditional probability"
   },
   {
-    "objectID": "lectures/logic.html#inverse-probability-bayes-theorem",
-    "href": "lectures/logic.html#inverse-probability-bayes-theorem",
+    "objectID": "lectures/logic.html#inverse-probability-bayes-theorem-or-bayes-rule",
+    "href": "lectures/logic.html#inverse-probability-bayes-theorem-or-bayes-rule",
     "title": "Probability theory",
-    "section": "Inverse probability: Bayes’ theorem",
-    "text": "Inverse probability: Bayes’ theorem\nFrom probability theory to statistical inference\n\\(\\text{posterior} = \\text{prior} \\times \\text{likelihood} \\div \\text{evidence}\\)"
+    "section": "Inverse probability: Bayes’ theorem (or Bayes’ rule)",
+    "text": "Inverse probability: Bayes’ theorem (or Bayes’ rule)\nFrom probability theory to statistical inference\n\\(\\text{posterior} = \\text{prior} \\times \\text{likelihood} \\div \\text{evidence}\\)"
   },
   {
     "objectID": "lectures/logic.html#references",
