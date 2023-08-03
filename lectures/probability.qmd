@@ -6,10 +6,13 @@ date: 2023-08-02
 
 ## Why study probability?
 
--   Probability is an essential component of *inductive logic*.
--   Inductive logic is an essential component of *scientific reasoning* in general and *statistical inference* in particular.
--   People suck at reasoning with probabilities ("*probability blindness*").
--   People often commit logical fallacies when reasoning with probabilities.
+-   Logic is the study of (the rules of) correct reasoning, i.e., valid/strong arguments/inferences.
+-   An argument/inference is a set of propositions/claims; more specifically a set of premises together with a conclusion.
+-   Probability is an essential component of *inductive reasoning* (i.e., arguments/inferences about unknowns from knowns).
+-   Probability theory is the study of (the rules of) probability as a mathematical object.
+-   Inductive reasoning is an essential component of *scientific reasoning* in general and *statistical inference* in particular.
+-   Inductive reasoning is distinct from deductive reasoning; the truth of the conclusion of a \[valid\] deductive argument is certain, if the premises are true; in contrast, the truth of the conclusion of a \[strong\] inductive argument is probable, if the premises are true.
+-   People suck at reasoning with probabilities.
 
 ## Logic for dummies
 
@@ -20,7 +23,7 @@ date: 2023-08-02
 -   Premises and conclusions, on the other hand, are true or false depending on whether they are in accord with reality.
 -   A deductive valid argument is one whose premises guarantee the truth of its conclusion. The conclusion follows with CERTAINTY from the premises. The premises entail the conclusion.
 -   An inductive \[strong/weak\] argument is one whose premises do not guarantee the truth of its conclusion but only that its conclusion is true with some \[high/low\] probability. The conclusion follows NOT with CERTAINTY, but only with some \[high/low\] PROBABILITY, from the premises (a "risky" inference). The premises partially entail the conclusion (strong/weak logical support).
--   Probability as the degree of partial entailment (or logical support) that a conclusion has, relative to a set of premises.
+-   Probability as the degree of partial entailment (or logical support) of a conclusion, given the premises.
 -   How strong is the inference? What is the probability of the conclusion, given the premises? Probability theory helps us answer this question!
 -   How high does the probability/how strong does the inference have to be before it's rational/reasonable to accept the conclusion? Decision theory (e.g., cost-benefit analysis) helps us answer this question!
 
