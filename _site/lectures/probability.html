@@ -129,12 +129,12 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#why-study-probability" id="toc-why-study-probability" class="nav-link active" data-scroll-target="#why-study-probability">Why study probability?</a></li>
-  <li><a href="#logic-for-dummies" id="toc-logic-for-dummies" class="nav-link" data-scroll-target="#logic-for-dummies">Logic for dummies</a></li>
+  <li><a href="#inductive-vs.-deductive-reasoning" id="toc-inductive-vs.-deductive-reasoning" class="nav-link" data-scroll-target="#inductive-vs.-deductive-reasoning">Inductive vs.&nbsp;deductive reasoning</a></li>
   <li><a href="#probability-as-a-mathematical-function" id="toc-probability-as-a-mathematical-function" class="nav-link" data-scroll-target="#probability-as-a-mathematical-function">Probability as a mathematical function</a></li>
   <li><a href="#interpretations-of-probability" id="toc-interpretations-of-probability" class="nav-link" data-scroll-target="#interpretations-of-probability">Interpretations of probability</a></li>
   <li><a href="#mutually-exclusive-events" id="toc-mutually-exclusive-events" class="nav-link" data-scroll-target="#mutually-exclusive-events">Mutually exclusive events</a></li>
   <li><a href="#independent-events" id="toc-independent-events" class="nav-link" data-scroll-target="#independent-events">Independent events</a></li>
-  <li><a href="#probability-rules" id="toc-probability-rules" class="nav-link" data-scroll-target="#probability-rules">Probability rules</a></li>
+  <li><a href="#the-rules-of-probability" id="toc-the-rules-of-probability" class="nav-link" data-scroll-target="#the-rules-of-probability">The rules of probability</a></li>
   <li><a href="#conditional-probability" id="toc-conditional-probability" class="nav-link" data-scroll-target="#conditional-probability">Conditional probability</a></li>
   <li><a href="#inverse-probability-bayes-theorem-or-bayes-rule" id="toc-inverse-probability-bayes-theorem-or-bayes-rule" class="nav-link" data-scroll-target="#inverse-probability-bayes-theorem-or-bayes-rule">Inverse probability: Bayes’ theorem (or Bayes’ rule)</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
@@ -175,29 +175,13 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="why-study-probability" class="level2">
 <h2 class="anchored" data-anchor-id="why-study-probability">Why study probability?</h2>
-<ul>
-<li>Logic is the study of (the rules of) correct reasoning, i.e., valid/strong arguments/inferences.</li>
-<li>An argument/inference is a set of propositions/claims; more specifically a set of premises together with a conclusion.</li>
-<li>Probability is an essential component of <em>inductive reasoning</em> (i.e., arguments/inferences about unknowns from knowns).</li>
-<li>Probability theory is the study of (the rules of) probability as a mathematical object.</li>
-<li>Inductive reasoning is an essential component of <em>scientific reasoning</em> in general and <em>statistical inference</em> in particular.</li>
-<li>Inductive reasoning is distinct from deductive reasoning; the truth of the conclusion of a [valid] deductive argument is certain, if the premises are true; in contrast, the truth of the conclusion of a [strong] inductive argument is probable, if the premises are true.</li>
-<li>People suck at reasoning with probabilities.</li>
-</ul>
+<p>Because people suck at reasoning with probabilities (i.e., <em>inductive reasoning</em>), the foundation of <em>scientific reasoning</em> in general and <em>statistical inference</em> in particular.</p>
 </section>
-<section id="logic-for-dummies" class="level2">
-<h2 class="anchored" data-anchor-id="logic-for-dummies">Logic for dummies</h2>
+<section id="inductive-vs.-deductive-reasoning" class="level2">
+<h2 class="anchored" data-anchor-id="inductive-vs.-deductive-reasoning">Inductive vs.&nbsp;deductive reasoning</h2>
 <ul>
-<li>Propositions/claims are sentences that can either be true or false (xor).</li>
+<li>Logic is the study of reasoning (i.e., arguments/inferences).</li>
 <li>An argument is a set of propositions/claims; more specifically a set of premises together with a conclusion.</li>
-<li>An inference is the process of reasoning from the premises of an argument to its conclusion.</li>
-<li>Arguments/inferences are either correct or incorrect. If they are correct then their premises support their conclusion. If they are incorrect then their premises do not support their conclusion.</li>
-<li>Premises and conclusions, on the other hand, are true or false depending on whether they are in accord with reality.</li>
-<li>A deductive valid argument is one whose premises guarantee the truth of its conclusion. The conclusion follows with CERTAINTY from the premises. The premises entail the conclusion.</li>
-<li>An inductive [strong/weak] argument is one whose premises do not guarantee the truth of its conclusion but only that its conclusion is true with some [high/low] probability. The conclusion follows NOT with CERTAINTY, but only with some [high/low] PROBABILITY, from the premises (a “risky” inference). The premises partially entail the conclusion (strong/weak logical support).</li>
-<li>Probability as the degree of partial entailment (or logical support) of a conclusion, given the premises.</li>
-<li>How strong is the inference? What is the probability of the conclusion, given the premises? Probability theory helps us answer this question!</li>
-<li>How high does the probability/how strong does the inference have to be before it’s rational/reasonable to accept the conclusion? Decision theory (e.g., cost-benefit analysis) helps us answer this question!</li>
 </ul>
 <p><span class="math display">\[
 \begin{align}
@@ -206,6 +190,18 @@ ul.task-list li input[type="checkbox"] {
 &amp; \overline{\therefore \text{conclusion}}
 \end{align}
 \]</span></p>
+<ul>
+<li>An inference is the process of reasoning from the premises of an argument to its conclusion.</li>
+<li>Propositions/claims are sentences that can either be true or false (xor).</li>
+<li>Inductive reasoning is distinct from deductive reasoning; the truth of the conclusion of a [valid] deductive argument is certain, if the premises are true; in contrast, the truth of the conclusion of a [strong] inductive argument is probable, if the premises are true.</li>
+<li>Arguments/inferences are either correct or incorrect. If they are correct then their premises support their conclusion. If they are incorrect then their premises do not support their conclusion.</li>
+<li>Premises and conclusions, on the other hand, are true or false depending on whether they are in accord with reality.</li>
+<li>A deductive valid argument is one whose premises guarantee the truth of its conclusion. The conclusion follows with CERTAINTY from the premises. The premises entail the conclusion.</li>
+<li>An inductive [strong/weak] argument is one whose premises do not guarantee the truth of its conclusion but only that its conclusion is true with some [high/low] probability. The conclusion follows NOT with CERTAINTY, but only with some [high/low] PROBABILITY, from the premises (a “risky” inference). The premises partially entail the conclusion (strong/weak logical support).</li>
+<li>Probability as the degree of partial entailment (or logical support) of a conclusion, given the premises.</li>
+<li>How strong is the inference? What is the probability of the conclusion, given the premises? Probability theory helps us answer this question!</li>
+<li>How high does the probability/how strong does the inference have to be before it’s rational/reasonable to accept the conclusion? Decision theory (e.g., cost-benefit analysis) helps us answer this question!</li>
+</ul>
 <p><span class="math display">\[
 \begin{align}
 &amp; \text{evidence} \\
@@ -242,6 +238,7 @@ ul.task-list li input[type="checkbox"] {
 <p>OUTPUT: <span class="math inline">\(y = f(x)\)</span></p>
 <p><span class="math inline">\(f: X \rightarrow Y\)</span></p>
 <p>Kolmogorov axioms vs.&nbsp;Cox’s theorem</p>
+<p>Probability theory is the study of probability as a mathematical object.</p>
 </section>
 <section id="interpretations-of-probability" class="level2">
 <h2 class="anchored" data-anchor-id="interpretations-of-probability">Interpretations of probability</h2>
@@ -254,8 +251,8 @@ ul.task-list li input[type="checkbox"] {
 <section id="independent-events" class="level2">
 <h2 class="anchored" data-anchor-id="independent-events">Independent events</h2>
 </section>
-<section id="probability-rules" class="level2">
-<h2 class="anchored" data-anchor-id="probability-rules">Probability rules</h2>
+<section id="the-rules-of-probability" class="level2">
+<h2 class="anchored" data-anchor-id="the-rules-of-probability">The rules of probability</h2>
 <p>negation</p>
 <p>disjunction (OR, sum/addition rule)</p>
 <p>conjunction (AND, product/multiplication rule)</p>

@@ -6,26 +6,12 @@ date: 2023-08-02
 
 ## Why study probability?
 
--   Logic is the study of (the rules of) correct reasoning, i.e., valid/strong arguments/inferences.
--   An argument/inference is a set of propositions/claims; more specifically a set of premises together with a conclusion.
--   Probability is an essential component of *inductive reasoning* (i.e., arguments/inferences about unknowns from knowns).
--   Probability theory is the study of (the rules of) probability as a mathematical object.
--   Inductive reasoning is an essential component of *scientific reasoning* in general and *statistical inference* in particular.
--   Inductive reasoning is distinct from deductive reasoning; the truth of the conclusion of a \[valid\] deductive argument is certain, if the premises are true; in contrast, the truth of the conclusion of a \[strong\] inductive argument is probable, if the premises are true.
--   People suck at reasoning with probabilities.
+Because people suck at reasoning with probabilities (i.e., *inductive reasoning*), the foundation of *scientific reasoning* in general and *statistical inference* in particular.
 
-## Logic for dummies
+## Inductive vs. deductive reasoning
 
--   Propositions/claims are sentences that can either be true or false (xor).
+-   Logic is the study of reasoning (i.e., arguments/inferences).
 -   An argument is a set of propositions/claims; more specifically a set of premises together with a conclusion.
--   An inference is the process of reasoning from the premises of an argument to its conclusion.
--   Arguments/inferences are either correct or incorrect. If they are correct then their premises support their conclusion. If they are incorrect then their premises do not support their conclusion.
--   Premises and conclusions, on the other hand, are true or false depending on whether they are in accord with reality.
--   A deductive valid argument is one whose premises guarantee the truth of its conclusion. The conclusion follows with CERTAINTY from the premises. The premises entail the conclusion.
--   An inductive \[strong/weak\] argument is one whose premises do not guarantee the truth of its conclusion but only that its conclusion is true with some \[high/low\] probability. The conclusion follows NOT with CERTAINTY, but only with some \[high/low\] PROBABILITY, from the premises (a "risky" inference). The premises partially entail the conclusion (strong/weak logical support).
--   Probability as the degree of partial entailment (or logical support) of a conclusion, given the premises.
--   How strong is the inference? What is the probability of the conclusion, given the premises? Probability theory helps us answer this question!
--   How high does the probability/how strong does the inference have to be before it's rational/reasonable to accept the conclusion? Decision theory (e.g., cost-benefit analysis) helps us answer this question!
 
 $$
 \begin{align}
@@ -34,6 +20,17 @@ $$
 & \overline{\therefore \text{conclusion}}
 \end{align}
 $$
+
+-   An inference is the process of reasoning from the premises of an argument to its conclusion.
+-   Propositions/claims are sentences that can either be true or false (xor).
+-   Inductive reasoning is distinct from deductive reasoning; the truth of the conclusion of a \[valid\] deductive argument is certain, if the premises are true; in contrast, the truth of the conclusion of a \[strong\] inductive argument is probable, if the premises are true.
+-   Arguments/inferences are either correct or incorrect. If they are correct then their premises support their conclusion. If they are incorrect then their premises do not support their conclusion.
+-   Premises and conclusions, on the other hand, are true or false depending on whether they are in accord with reality.
+-   A deductive valid argument is one whose premises guarantee the truth of its conclusion. The conclusion follows with CERTAINTY from the premises. The premises entail the conclusion.
+-   An inductive \[strong/weak\] argument is one whose premises do not guarantee the truth of its conclusion but only that its conclusion is true with some \[high/low\] probability. The conclusion follows NOT with CERTAINTY, but only with some \[high/low\] PROBABILITY, from the premises (a "risky" inference). The premises partially entail the conclusion (strong/weak logical support).
+-   Probability as the degree of partial entailment (or logical support) of a conclusion, given the premises.
+-   How strong is the inference? What is the probability of the conclusion, given the premises? Probability theory helps us answer this question!
+-   How high does the probability/how strong does the inference have to be before it's rational/reasonable to accept the conclusion? Decision theory (e.g., cost-benefit analysis) helps us answer this question!
 
 $$
 \begin{align}
@@ -77,6 +74,8 @@ $f: X \rightarrow Y$
 
 Kolmogorov axioms vs. Cox's theorem
 
+Probability theory is the study of probability as a mathematical object.
+
 ## Interpretations of probability
 
 objective vs. subjective
@@ -87,7 +86,7 @@ event vs. proposition language
 
 ## Independent events
 
-## Probability rules
+## The rules of probability
 
 negation
 
