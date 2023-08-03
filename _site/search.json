@@ -18,7 +18,21 @@
     "href": "notes/index.html",
     "title": "Notes",
     "section": "",
-    "text": "Probability theory: The logic of science\n\n\n\n\n\n\n\n\n\n\n\n\nAug 2, 2023\n\n\nEdoardo Marcora\n\n\n\n\n\n\nNo matching items"
+    "text": "Probability theory: The logic of science\n\n\n\n\n\n\n\n\n\n\n\n\nAug 2, 2023\n\n\nEdoardo Marcora\n\n\n\n\n\n\n  \n\n\n\n\nStatistical inference\n\n\n\n\n\n\n\n\n\n\n\n\nAug 2, 2023\n\n\nEdoardo Marcora\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "notes/statistical_inference.html#interpretations-of-probability",
+    "href": "notes/statistical_inference.html#interpretations-of-probability",
+    "title": "Statistical inference",
+    "section": "Interpretations of probability",
+    "text": "Interpretations of probability\nobjective vs. subjective\nevent vs. proposition language"
+  },
+  {
+    "objectID": "notes/statistical_inference.html#references",
+    "href": "notes/statistical_inference.html#references",
+    "title": "Statistical inference",
+    "section": "References",
+    "text": "References\n\nXXX"
   },
   {
     "objectID": "notes/probability_theory.html",
@@ -42,18 +56,11 @@
     "text": "Inductive vs. deductive reasoning\n\nLogic is the study of reasoning (i.e., drawing inferences/conclusions from known or assumed facts/premises).\nAn argument is a set of propositions/claims; more specifically a set of premises together with a conclusion.\n\n\\[\n\\begin{align}\n& \\text{premise} \\\\\n& \\text{premise} \\\\\n& \\overline{\\therefore \\text{conclusion}}\n\\end{align}\n\\]\n\nAn inference is the process of reasoning from the premises of an argument to its conclusion.\nPropositions/claims are sentences that can either be true or false (xor).\nInductive reasoning is distinct from deductive reasoning; the truth of the conclusion of a [valid] deductive argument is certain, if the premises are true; in contrast, the truth of the conclusion of a [strong] inductive argument is probable, if the premises are true.\nArguments/inferences are either correct or incorrect. If they are correct then their premises support their conclusion. If they are incorrect then their premises do not support their conclusion.\nPremises and conclusions, on the other hand, are true or false depending on whether they are in accord with reality.\nA deductive valid argument is one whose premises guarantee the truth of its conclusion. The conclusion follows with CERTAINTY from the premises. The premises entail the conclusion.\nAn inductive [strong/weak] argument is one whose premises do not guarantee the truth of its conclusion but only that its conclusion is true with some [high/low] probability. The conclusion follows NOT with CERTAINTY, but only with some [high/low] PROBABILITY, from the premises (a “risky” inference). The premises partially entail the conclusion (strong/weak logical support).\nProbability as the degree of partial entailment (or logical support) of a conclusion, given the premises.\nHow strong is the inference? What is the probability of the conclusion, given the premises? Probability theory helps us answer this question!\nHow high does the probability/how strong does the inference have to be before it’s rational/reasonable to accept the conclusion? Decision theory (e.g., cost-benefit analysis) helps us answer this question!\nModus ponens\n\n\\[\n\\begin{align}\n& A \\rightarrow B \\\\\n& A \\\\\n& \\overline{\\therefore B}\n\\end{align}\n\\]\n\nModus tollens\n\n\\[\n\\begin{aligned}\n& A \\rightarrow B \\\\\n& \\text{not-}A \\\\\n& \\overline{\\therefore \\text{not-}B}\n\\end{aligned}\n\\]"
   },
   {
-    "objectID": "notes/probability_theory.html#probability-as-a-mathematical-function",
-    "href": "notes/probability_theory.html#probability-as-a-mathematical-function",
+    "objectID": "notes/probability_theory.html#probability-as-a-mathematical-object",
+    "href": "notes/probability_theory.html#probability-as-a-mathematical-object",
     "title": "Probability theory: The logic of science",
-    "section": "Probability as a mathematical function",
-    "text": "Probability as a mathematical function\nIn mathematics, a function from a set \\(X\\) to a set \\(Y\\) is an assignment of an element \\(y\\) of \\(Y\\) to each element \\(x\\) of \\(X\\).\nINPUT: \\(x\\)\nFUNCTION: \\(f\\)\nOUTPUT: \\(y = f(x)\\)\n\\(f: X \\rightarrow Y\\)\nKolmogorov axioms vs. Cox’s theorem\nProbability theory is the study of probability as a mathematical object. It is the foundation of statistical inference (learning from data)."
-  },
-  {
-    "objectID": "notes/probability_theory.html#interpretations-of-probability",
-    "href": "notes/probability_theory.html#interpretations-of-probability",
-    "title": "Probability theory: The logic of science",
-    "section": "Interpretations of probability",
-    "text": "Interpretations of probability\nobjective vs. subjective\nevent vs. proposition language"
+    "section": "Probability as a mathematical object",
+    "text": "Probability as a mathematical object\nIn mathematics, a function from a set \\(X\\) to a set \\(Y\\) is an assignment of an element \\(y\\) of \\(Y\\) to each element \\(x\\) of \\(X\\).\nINPUT: \\(x\\)\nFUNCTION: \\(f\\)\nOUTPUT: \\(y = f(x)\\)\n\\(f: X \\rightarrow Y\\)\nKolmogorov axioms vs. Cox’s theorem\nProbability theory is the study of probability as a mathematical object. It is the foundation of statistical inference (learning from data)."
   },
   {
     "objectID": "notes/probability_theory.html#mutually-exclusive-events",

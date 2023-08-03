@@ -52,7 +52,7 @@ $$
 \end{aligned}
 $$
 
-## Probability as a mathematical function
+## Probability as a mathematical object
 
 In mathematics, a function from a set $X$ to a set $Y$ is an assignment of an element $y$ of $Y$ to each element $x$ of $X$.
 
@@ -67,12 +67,6 @@ $f: X \rightarrow Y$
 Kolmogorov axioms vs. Cox's theorem
 
 Probability theory is the study of probability as a mathematical object. It is the foundation of statistical inference (learning from data).
-
-## Interpretations of probability
-
-objective vs. subjective
-
-event vs. proposition language
 
 ## Mutually exclusive events
 
