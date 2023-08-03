@@ -1,10 +1,17 @@
 ---
-title: "Probability theory"
+title: "Probability theory: The logic of science"
 author: "Edoardo Marcora"
 date: 2023-08-02
 ---
 
-## Probability theory: The logic of science
+## Why study probability?
+
+-   Probability is an essential component of *inductive logic*.
+-   Inductive logic is an essential component of *scientific reasoning* in general and *statistical inference* in particular.
+-   People suck at reasoning with probabilities ("*probability blindness*").
+-   People often commit logical fallacies when reasoning with probabilities.
+
+## Logic for dummies
 
 -   Propositions/claims are sentences that can either be true or false (xor).
 -   An argument is a set of propositions/claims; more specifically a set of premises together with a conclusion.

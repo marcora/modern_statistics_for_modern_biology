@@ -21,80 +21,87 @@
     "text": "No matching items"
   },
   {
-    "objectID": "lectures/index.html",
-    "href": "lectures/index.html",
-    "title": "Lectures",
+    "objectID": "lectures/probability.html",
+    "href": "lectures/probability.html",
+    "title": "Probability theory: The logic of science",
     "section": "",
-    "text": "Probability theory\n\n\n\n\n\n\n\n\n\n\n\n\nAug 2, 2023\n\n\nEdoardo Marcora\n\n\n\n\n\n\nNo matching items"
+    "text": "Probability is an essential component of inductive logic.\nInductive logic is an essential component of scientific reasoning in general and statistical inference in particular.\nPeople suck at reasoning with probabilities (“probability blindness”).\nPeople often commit logical fallacies when reasoning with probabilities."
   },
   {
-    "objectID": "lectures/logic.html",
-    "href": "lectures/logic.html",
-    "title": "Probability theory",
+    "objectID": "lectures/probability.html#why-study-probability",
+    "href": "lectures/probability.html#why-study-probability",
+    "title": "Probability theory: The logic of science",
     "section": "",
-    "text": "Propositions/claims are sentences that can either be true or false (xor).\nAn argument is a set of propositions/claims; more specifically a set of premises together with a conclusion.\nAn inference is the process of reasoning from the premises of an argument to its conclusion.\nArguments/inferences are either correct or incorrect. If they are correct then their premises support their conclusion. If they are incorrect then their premises do not support their conclusion.\nPremises and conclusions, on the other hand, are true or false depending on whether they are in accord with reality.\nA deductive valid argument is one whose premises guarantee the truth of its conclusion. The conclusion follows with CERTAINTY from the premises. The premises entail the conclusion.\nAn inductive [strong/weak] argument is one whose premises do not guarantee the truth of its conclusion but only that its conclusion is true with some [high/low] probability. The conclusion follows NOT with CERTAINTY, but only with some [high/low] PROBABILITY, from the premises (a “risky” inference). The premises partially entail the conclusion (strong/weak logical support).\nProbability as the degree of partial entailment (or logical support) that a conclusion has, relative to a set of premises.\nHow strong is the inference? What is the probability of the conclusion, given the premises? Probability theory helps us answer this question!\nHow high does the probability/how strong does the inference have to be before it’s rational/reasonable to accept the conclusion? Decision theory (e.g., cost-benefit analysis) helps us answer this question!\n\n\\[\n\\begin{align}\n& \\text{premise} \\\\\n& \\text{premise} \\\\\n& \\overline{\\therefore \\text{conclusion}}\n\\end{align}\n\\]\n\\[\n\\begin{align}\n& \\text{evidence} \\\\\n& \\text{evidence} \\\\\n& \\overline{\\therefore \\text{hypothesis}}\n\\end{align}\n\\]\n\nModus ponens\n\n\\[\n\\begin{align}\n& A \\rightarrow B \\\\\n& A \\\\\n& \\overline{\\therefore B}\n\\end{align}\n\\]\n\nModus tollens\n\n\\[\n\\begin{aligned}\n& A \\rightarrow B \\\\\n& \\text{not-}A \\\\\n& \\overline{\\therefore \\text{not-}B}\n\\end{aligned}\n\\]"
+    "text": "Probability is an essential component of inductive logic.\nInductive logic is an essential component of scientific reasoning in general and statistical inference in particular.\nPeople suck at reasoning with probabilities (“probability blindness”).\nPeople often commit logical fallacies when reasoning with probabilities."
   },
   {
-    "objectID": "lectures/logic.html#probability-theory-the-logic-of-science",
-    "href": "lectures/logic.html#probability-theory-the-logic-of-science",
-    "title": "Probability theory",
-    "section": "",
-    "text": "Propositions/claims are sentences that can either be true or false (xor).\nAn argument is a set of propositions/claims; more specifically a set of premises together with a conclusion.\nAn inference is the process of reasoning from the premises of an argument to its conclusion.\nArguments/inferences are either correct or incorrect. If they are correct then their premises support their conclusion. If they are incorrect then their premises do not support their conclusion.\nPremises and conclusions, on the other hand, are true or false depending on whether they are in accord with reality.\nA deductive valid argument is one whose premises guarantee the truth of its conclusion. The conclusion follows with CERTAINTY from the premises. The premises entail the conclusion.\nAn inductive [strong/weak] argument is one whose premises do not guarantee the truth of its conclusion but only that its conclusion is true with some [high/low] probability. The conclusion follows NOT with CERTAINTY, but only with some [high/low] PROBABILITY, from the premises (a “risky” inference). The premises partially entail the conclusion (strong/weak logical support).\nProbability as the degree of partial entailment (or logical support) that a conclusion has, relative to a set of premises.\nHow strong is the inference? What is the probability of the conclusion, given the premises? Probability theory helps us answer this question!\nHow high does the probability/how strong does the inference have to be before it’s rational/reasonable to accept the conclusion? Decision theory (e.g., cost-benefit analysis) helps us answer this question!\n\n\\[\n\\begin{align}\n& \\text{premise} \\\\\n& \\text{premise} \\\\\n& \\overline{\\therefore \\text{conclusion}}\n\\end{align}\n\\]\n\\[\n\\begin{align}\n& \\text{evidence} \\\\\n& \\text{evidence} \\\\\n& \\overline{\\therefore \\text{hypothesis}}\n\\end{align}\n\\]\n\nModus ponens\n\n\\[\n\\begin{align}\n& A \\rightarrow B \\\\\n& A \\\\\n& \\overline{\\therefore B}\n\\end{align}\n\\]\n\nModus tollens\n\n\\[\n\\begin{aligned}\n& A \\rightarrow B \\\\\n& \\text{not-}A \\\\\n& \\overline{\\therefore \\text{not-}B}\n\\end{aligned}\n\\]"
+    "objectID": "lectures/probability.html#logic-for-dummies",
+    "href": "lectures/probability.html#logic-for-dummies",
+    "title": "Probability theory: The logic of science",
+    "section": "Logic for dummies",
+    "text": "Logic for dummies\n\nPropositions/claims are sentences that can either be true or false (xor).\nAn argument is a set of propositions/claims; more specifically a set of premises together with a conclusion.\nAn inference is the process of reasoning from the premises of an argument to its conclusion.\nArguments/inferences are either correct or incorrect. If they are correct then their premises support their conclusion. If they are incorrect then their premises do not support their conclusion.\nPremises and conclusions, on the other hand, are true or false depending on whether they are in accord with reality.\nA deductive valid argument is one whose premises guarantee the truth of its conclusion. The conclusion follows with CERTAINTY from the premises. The premises entail the conclusion.\nAn inductive [strong/weak] argument is one whose premises do not guarantee the truth of its conclusion but only that its conclusion is true with some [high/low] probability. The conclusion follows NOT with CERTAINTY, but only with some [high/low] PROBABILITY, from the premises (a “risky” inference). The premises partially entail the conclusion (strong/weak logical support).\nProbability as the degree of partial entailment (or logical support) that a conclusion has, relative to a set of premises.\nHow strong is the inference? What is the probability of the conclusion, given the premises? Probability theory helps us answer this question!\nHow high does the probability/how strong does the inference have to be before it’s rational/reasonable to accept the conclusion? Decision theory (e.g., cost-benefit analysis) helps us answer this question!\n\n\\[\n\\begin{align}\n& \\text{premise} \\\\\n& \\text{premise} \\\\\n& \\overline{\\therefore \\text{conclusion}}\n\\end{align}\n\\]\n\\[\n\\begin{align}\n& \\text{evidence} \\\\\n& \\text{evidence} \\\\\n& \\overline{\\therefore \\text{hypothesis}}\n\\end{align}\n\\]\n\nModus ponens\n\n\\[\n\\begin{align}\n& A \\rightarrow B \\\\\n& A \\\\\n& \\overline{\\therefore B}\n\\end{align}\n\\]\n\nModus tollens\n\n\\[\n\\begin{aligned}\n& A \\rightarrow B \\\\\n& \\text{not-}A \\\\\n& \\overline{\\therefore \\text{not-}B}\n\\end{aligned}\n\\]"
   },
   {
-    "objectID": "lectures/logic.html#probability-as-a-mathematical-function",
-    "href": "lectures/logic.html#probability-as-a-mathematical-function",
-    "title": "Probability theory",
+    "objectID": "lectures/probability.html#probability-as-a-mathematical-function",
+    "href": "lectures/probability.html#probability-as-a-mathematical-function",
+    "title": "Probability theory: The logic of science",
     "section": "Probability as a mathematical function",
     "text": "Probability as a mathematical function\nIn mathematics, a function from a set \\(X\\) to a set \\(Y\\) is an assignment of an element \\(y\\) of \\(Y\\) to each element \\(x\\) of \\(X\\).\nINPUT: \\(x\\)\nFUNCTION: \\(f\\)\nOUTPUT: \\(y = f(x)\\)\n\\(f: X \\rightarrow Y\\)\nKolmogorov axioms vs. Cox’s theorem"
   },
   {
-    "objectID": "lectures/logic.html#interpretations-of-probability",
-    "href": "lectures/logic.html#interpretations-of-probability",
-    "title": "Probability theory",
+    "objectID": "lectures/probability.html#interpretations-of-probability",
+    "href": "lectures/probability.html#interpretations-of-probability",
+    "title": "Probability theory: The logic of science",
     "section": "Interpretations of probability",
     "text": "Interpretations of probability\nobjective vs. subjective\nevent vs. proposition language"
   },
   {
-    "objectID": "lectures/logic.html#mutually-exclusive-events",
-    "href": "lectures/logic.html#mutually-exclusive-events",
-    "title": "Probability theory",
+    "objectID": "lectures/probability.html#mutually-exclusive-events",
+    "href": "lectures/probability.html#mutually-exclusive-events",
+    "title": "Probability theory: The logic of science",
     "section": "Mutually exclusive events",
     "text": "Mutually exclusive events"
   },
   {
-    "objectID": "lectures/logic.html#independent-events",
-    "href": "lectures/logic.html#independent-events",
-    "title": "Probability theory",
+    "objectID": "lectures/probability.html#independent-events",
+    "href": "lectures/probability.html#independent-events",
+    "title": "Probability theory: The logic of science",
     "section": "Independent events",
     "text": "Independent events"
   },
   {
-    "objectID": "lectures/logic.html#probability-rules",
-    "href": "lectures/logic.html#probability-rules",
-    "title": "Probability theory",
+    "objectID": "lectures/probability.html#probability-rules",
+    "href": "lectures/probability.html#probability-rules",
+    "title": "Probability theory: The logic of science",
     "section": "Probability rules",
     "text": "Probability rules\nnegation\ndisjunction (OR, sum/addition rule)\nconjunction (AND, product/multiplication rule)"
   },
   {
-    "objectID": "lectures/logic.html#conditional-probability",
-    "href": "lectures/logic.html#conditional-probability",
-    "title": "Probability theory",
+    "objectID": "lectures/probability.html#conditional-probability",
+    "href": "lectures/probability.html#conditional-probability",
+    "title": "Probability theory: The logic of science",
     "section": "Conditional probability",
     "text": "Conditional probability"
   },
   {
-    "objectID": "lectures/logic.html#inverse-probability-bayes-theorem-or-bayes-rule",
-    "href": "lectures/logic.html#inverse-probability-bayes-theorem-or-bayes-rule",
-    "title": "Probability theory",
+    "objectID": "lectures/probability.html#inverse-probability-bayes-theorem-or-bayes-rule",
+    "href": "lectures/probability.html#inverse-probability-bayes-theorem-or-bayes-rule",
+    "title": "Probability theory: The logic of science",
     "section": "Inverse probability: Bayes’ theorem (or Bayes’ rule)",
     "text": "Inverse probability: Bayes’ theorem (or Bayes’ rule)\nFrom probability theory to statistical inference\n\\(\\text{posterior} = \\text{prior} \\times \\text{likelihood} \\div \\text{evidence}\\)"
   },
   {
-    "objectID": "lectures/logic.html#references",
-    "href": "lectures/logic.html#references",
-    "title": "Probability theory",
+    "objectID": "lectures/probability.html#references",
+    "href": "lectures/probability.html#references",
+    "title": "Probability theory: The logic of science",
     "section": "References",
     "text": "References\n\nReasoning with Probabilities [youtube playlist]\nIntroduction to Probability [book] [online course] [youtube playlist]\nBernoulli’s Fallacy [book]"
+  },
+  {
+    "objectID": "lectures/index.html",
+    "href": "lectures/index.html",
+    "title": "Lectures",
+    "section": "",
+    "text": "Probability theory: The logic of science\n\n\n\n\n\n\n\n\n\n\n\n\nAug 2, 2023\n\n\nEdoardo Marcora\n\n\n\n\n\n\nNo matching items"
   }
 ]
