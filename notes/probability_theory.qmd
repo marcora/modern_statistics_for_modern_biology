@@ -6,11 +6,12 @@ date: 2023-08-02
 
 ## Why study probability?
 
-Because people suck at reasoning with probabilities (i.e., *inductive reasoning*), the foundation of *scientific reasoning* in general and *statistical inference* in particular.
+-   Because probability is the foundation of *inductive reasoning* (i.e., reasoning with probabilities) and inductive reasoning is the foundation of *scientific reasoning*. Unfortunately, humans suck at inductive reasoning; we suffer from "probability blindness" and are often fallacious when reasoning with probabilities.
+-   Because *probability theory* is the foundation of *statistical inference* (i.e., learning from data under uncertainty), the cornerstone of modern data analysis.
 
 ## Inductive vs. deductive reasoning
 
--   Logic is the study of reasoning (i.e., arguments/inferences).
+-   Logic is the study of reasoning (i.e., drawing inferences/conclusions from known or assumed facts/premises).
 -   An argument is a set of propositions/claims; more specifically a set of premises together with a conclusion.
 
 $$
@@ -31,15 +32,6 @@ $$
 -   Probability as the degree of partial entailment (or logical support) of a conclusion, given the premises.
 -   How strong is the inference? What is the probability of the conclusion, given the premises? Probability theory helps us answer this question!
 -   How high does the probability/how strong does the inference have to be before it's rational/reasonable to accept the conclusion? Decision theory (e.g., cost-benefit analysis) helps us answer this question!
-
-$$
-\begin{align}
-& \text{evidence} \\
-& \text{evidence} \\
-& \overline{\therefore \text{hypothesis}}
-\end{align}
-$$
-
 -   Modus ponens
 
 $$
@@ -74,7 +66,7 @@ $f: X \rightarrow Y$
 
 Kolmogorov axioms vs. Cox's theorem
 
-Probability theory is the study of probability as a mathematical object.
+Probability theory is the study of probability as a mathematical object. It is the foundation of statistical inference (learning from data).
 
 ## Interpretations of probability
 

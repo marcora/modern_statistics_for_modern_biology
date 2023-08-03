@@ -9,12 +9,12 @@
   },
   {
     "listing": "/notes/index.html",
-    "items": []
+    "items": [
+      "/notes/probability_theory.html"
+    ]
   },
   {
     "listing": "/lectures/index.html",
-    "items": [
-      "/lectures/probability.html"
-    ]
+    "items": []
   }
 ]
