@@ -246,15 +246,19 @@ ul.task-list li input[type="checkbox"] {
 <p>FUNCTION: <span class="math inline">\(f\)</span></p>
 <p>OUTPUT: <span class="math inline">\(y = f(x)\)</span></p>
 <p><span class="math inline">\(f: X \rightarrow Y\)</span></p>
-<p>Probability is a function <span class="math inline">\(P\)</span> that assigns a number between 0 and 1 to each event/subset of the sample space <span class="math inline">\(\Omega\)</span>, i.e., the non-empty set of all possible outcomes of a random phenomemon/process/“experiment”, e.g., tossing a coin.</p>
-<p><span class="math inline">\(P : E \rightarrow [0,1]\)</span></p>
-<p>This function <span class="math inline">\(P\)</span> must satisfy a number of axioms (Kolmogorov axioms or Cox’s theorem):</p>
+<p>Probability is a function <span class="math inline">\(P\)</span> that assigns a number between 0 and 1 to each subset <span class="math inline">\(A\)</span> of a sample space <span class="math inline">\(\Omega\)</span> (or <span class="math inline">\(S\)</span> or <span class="math inline">\(U\)</span> for “universal set”, i.e., the non-empty set of all possible outcomes of a random phenomemon/process/“experiment”, e.g., tossing a coin).</p>
+<p><span class="math inline">\(A \subseteq \Omega\)</span>, an event/proposition</p>
+<p><span class="math inline">\(P(A)\)</span>, the probability of <span class="math inline">\(A\)</span></p>
+<p>Given an event space <span class="math inline">\(E\)</span> (i.e., the set of all possible subsets of a sample space <span class="math inline">\(\Omega\)</span>), the function <span class="math inline">\(P: E \rightarrow [0, 1]\)</span> must satisfy a number of axioms (Kolmogorov axioms or Cox’s theorem):</p>
 <ul>
 <li><span class="math inline">\(P(A) \ge 0\)</span></li>
 <li><span class="math inline">\(P(\Omega) = 1\)</span></li>
-<li><span class="math inline">\(P\)</span> is countably additive: if <span class="math inline">\(\{A_i\}_{i=1}^n \subseteq E\)</span> is a countable collection of pairwise disjoint sets, then <span class="math inline">\(P(\cup_{i=1}^n A_i) = \sum_{i=1}^n P(A_i)\)</span>.</li>
+<li><span class="math inline">\(P\)</span> is countably additive: if <span class="math inline">\(A_1, A_2, \ldots, A_n\)</span> are pairwise disjoint sets, then <span class="math inline">\(P(\cup_{i=1}^n A_i) = \sum_{i=1}^n P(A_i)\)</span>.</li>
 </ul>
-<p>Probability theory is the study of probability as a mathematical object. It is the foundation of statistical inference (learning from data).</p>
+<p>All rules of probability theory are derived from these axioms, for example:</p>
+<p><span class="math inline">\(0 \le P(A) \le 1\)</span></p>
+<p><span class="math inline">\(P(\emptyset) = 0\)</span></p>
+<p>Probability theory is the study of probability as a mathematical object.</p>
 </section>
 <section id="mutually-exclusive-events" class="level2">
 <h2 class="anchored" data-anchor-id="mutually-exclusive-events">Mutually exclusive events</h2>

@@ -90,17 +90,25 @@ OUTPUT: $y = f(x)$
 
 $f: X \rightarrow Y$
 
-Probability is a function $P$ that assigns a number between 0 and 1 to each event/subset of the sample space $\Omega$, i.e., the non-empty set of all possible outcomes of a random phenomemon/process/"experiment", e.g., tossing a coin.
+Probability is a function $P$ that assigns a number between 0 and 1 to each subset $A$ of a sample space $\Omega$ (or $S$ or $U$ for "universal set", i.e., the non-empty set of all possible outcomes of a random phenomemon/process/"experiment", e.g., tossing a coin).
 
-$P : E \rightarrow [0,1]$
+$A \subseteq \Omega$, an event/proposition
 
-This function $P$ must satisfy a number of axioms (Kolmogorov axioms or Cox's theorem):
+$P(A)$, the probability of $A$
+
+Given an event space $E$ (i.e., the set of all possible subsets of a sample space $\Omega$), the function $P: E \rightarrow [0, 1]$ must satisfy a number of axioms (Kolmogorov axioms or Cox's theorem):
 
 -   $P(A) \ge 0$
 -   $P(\Omega) = 1$
--   $P$ is countably additive: if $\{A_i\}_{i=1}^n \subseteq E$ is a countable collection of pairwise disjoint sets, then $P(\cup_{i=1}^n A_i) = \sum_{i=1}^n P(A_i)$.
+-   $P$ is countably additive: if $A_1, A_2, \ldots, A_n$ are pairwise disjoint sets, then $P(\cup_{i=1}^n A_i) = \sum_{i=1}^n P(A_i)$.
 
-Probability theory is the study of probability as a mathematical object. It is the foundation of statistical inference (learning from data).
+All rules of probability theory are derived from these axioms, for example:
+
+$0 \le P(A) \le 1$
+
+$P(\emptyset) = 0$
+
+Probability theory is the study of probability as a mathematical object.
 
 ## Mutually exclusive events
 
