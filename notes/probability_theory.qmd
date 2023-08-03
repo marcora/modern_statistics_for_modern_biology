@@ -23,7 +23,7 @@ $$
 $$
 
 -   An **inference** is the process of reasoning from the premises of an argument to its conclusion.
--   Propositions/claims are sentences that can either be true or false (xor).
+-   A proposition is a sentence that asserts a claim that is either true or false (xor).
 -   Inductive reasoning is distinct from deductive reasoning; the truth of the conclusion of a \[valid\] deductive argument is certain, if the premises are true; in contrast, the truth of the conclusion of a \[strong\] inductive argument is probable, if the premises are true.
 -   Arguments/inferences are either correct or incorrect. If they are correct then their premises support their conclusion. If they are incorrect then their premises do not support their conclusion.
 -   Premises and conclusions, on the other hand, are true or false depending on whether they are in accord with reality.
@@ -54,11 +54,15 @@ $$
 
 ## Proposition vs. event language
 
+Two ways of asking the same question!
+
 *"What is the probability that the coin will land heads?"*
 
 **Proposition**: *"the coin will land heads"*
 
 **Question**: What is the probability that this **proposition** is **true**?
+
+A proposition is a sentence that asserts a claim that is either true or false.
 
 Better fit for the logical or bayesian/"subjective" interpretations of probability.
 
@@ -69,6 +73,8 @@ Better fit for the logical or bayesian/"subjective" interpretations of probabili
 **Event**: *"the coin landing heads"*
 
 **Question**: What is the probability that this **event** will **occur**?
+
+An event in not a linguistic entity, it does not assert anything (that is either true or false). An event is a state of affairs in the world that either occurs or doesn't occur.
 
 Better fit for the classical or frequentist/"objective" interpretations of probability.
 
@@ -84,7 +90,15 @@ OUTPUT: $y = f(x)$
 
 $f: X \rightarrow Y$
 
-Kolmogorov axioms vs. Cox's theorem
+Probability is a function $P$ that assigns a number between 0 and 1 to each event/subset of the sample space $\Omega$, i.e., the non-empty set of all possible outcomes of a random phenomemon/process/"experiment", e.g., tossing a coin.
+
+$P : E \rightarrow [0,1]$
+
+This function $P$ must satisfy a number of axioms (Kolmogorov axioms or Cox's theorem):
+
+-   $P(A) \ge 0$
+-   $P(\Omega) = 1$
+-   $P$ is countably additive: if $\{A_i\}_{i=1}^n \subseteq E$ is a countable collection of pairwise disjoint sets, then $P(\cup_{i=1}^n A_i) = \sum_{i=1}^n P(A_i)$.
 
 Probability theory is the study of probability as a mathematical object. It is the foundation of statistical inference (learning from data).
 
