@@ -32,14 +32,14 @@
     "href": "notes/statistical_inference.html#from-probability-theory-to-statistical-inference",
     "title": "Statistical inference",
     "section": "From probability theory to statistical inference",
-    "text": "From probability theory to statistical inference\n\nBayes’ theorem and inverse probability\n\\(P(A \\mid B) = \\frac{P(A) \\times P(B \\mid A)}{P(B)}\\)\n\\(A = H = \\text{hypothesis}\\)\n\\(B = D = \\text{data/observations}\\)\n\\(P(H \\mid D) = \\frac{P(H) \\times P(D \\mid H)}{P(D)}\\)\n\\(\\text{posterior} = \\frac{\\text{prior} \\times \\text{likelihood}}{\\text{evidence}}\\)\n\n\nBernoulli’s fallacy\na.k.a. fallacy of the transposed conditional; base rate fallacy; prosecutor’s fallacy\n\\(P(H \\mid D) = \\frac{P(H) \\times P(D \\mid H)}{P(H) \\times P(D \\mid H) + P(\\lnot H) \\times P(D \\mid \\lnot H)}\\)"
+    "text": "From probability theory to statistical inference\n\nInverse probability: Bayes’ theorem\n\\(P(A \\mid B) = \\frac{P(A) \\times P(B \\mid A)}{P(B)}\\)\n\\(A = H = \\text{hypothesis}\\)\n\\(B = D = \\text{data/observations}\\)\n\\(P(H \\mid D) = \\frac{P(H) \\times P(D \\mid H)}{P(D)}\\)\n\\(\\text{posterior} = \\frac{\\text{prior} \\times \\text{likelihood}}{\\text{evidence}}\\)\n\n\nBernoulli’s fallacy\na.k.a. fallacy of the transposed conditional; base rate fallacy; prosecutor’s fallacy\n\\(P(H \\mid D) = \\frac{P(H) \\times P(D \\mid H)}{P(H) \\times P(D \\mid H) + P(\\lnot H) \\times P(D \\mid \\lnot H)}\\)"
   },
   {
     "objectID": "notes/statistical_inference.html#references",
     "href": "notes/statistical_inference.html#references",
     "title": "Statistical inference",
     "section": "References",
-    "text": "References\n\nXXX"
+    "text": "References\n\nReasoning with Probabilities [youtube playlist]\nIntroduction to Probability [book] [online course] [youtube playlist]\nBernoulli’s Fallacy [book]"
   },
   {
     "objectID": "notes/probability_theory.html",
@@ -109,7 +109,7 @@
     "href": "notes/probability_theory.html#inverse-probability-bayes-theorem-or-bayes-rule",
     "title": "Probability theory: The logic of science",
     "section": "Inverse probability: Bayes’ theorem (or Bayes’ rule)",
-    "text": "Inverse probability: Bayes’ theorem (or Bayes’ rule)\n\\(P(A\\ \\text{and}\\ B) = P(B\\ \\text{and}\\ A)\\)\n\\(P(A) \\times P(B \\mid A) = P(B) \\times P(A \\mid B)\\)\n\\(P(A \\mid B) = \\frac{P(A) \\times P(B \\mid A)}{P(B)}\\)"
+    "text": "Inverse probability: Bayes’ theorem (or Bayes’ rule)\n\\(P(A\\ \\text{and} \\ B) = P(A) \\times P(B \\mid A)\\)\n\\(P(B\\ \\text{and} \\ A) = P(B) \\times P(A \\mid B)\\)\n\\(P(A\\ \\text{and}\\ B) = P(B\\ \\text{and}\\ A)\\)\n\\(P(A) \\times P(B \\mid A) = P(B) \\times P(A \\mid B)\\)\n\\(P(A \\mid B) = \\frac{P(A) \\times P(B \\mid A)}{P(B)}\\)"
   },
   {
     "objectID": "notes/probability_theory.html#references",

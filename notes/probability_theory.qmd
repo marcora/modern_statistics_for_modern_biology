@@ -171,6 +171,10 @@ $P(A \mid B) \ne P(B \mid A)$
 
 ## Inverse probability: Bayes' theorem (or Bayes' rule)
 
+$P(A\ \text{and} \ B) = P(A) \times P(B \mid A)$
+
+$P(B\ \text{and} \ A) = P(B) \times P(A \mid B)$
+
 $P(A\ \text{and}\ B) = P(B\ \text{and}\ A)$
 
 $P(A) \times P(B \mid A) = P(B) \times P(A \mid B)$
