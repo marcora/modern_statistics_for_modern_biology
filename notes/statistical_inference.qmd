@@ -32,6 +32,7 @@ $P(H \mid D) = \frac{P(H) \times P(D \mid H)}{P(H) \times P(D \mid H) + P(\lnot 
 
 ## References
 
+-   Logic: Fundamental Concepts \[[youtube playlist](https://youtube.com/playlist?list=PL6a98igNglIzgNAdPMpfOA71KVng49hwD)\]
 -   Reasoning with Probabilities \[[youtube playlist](https://youtube.com/playlist?list=PL1D85E19690485A3E)\]
 -   Introduction to Probability \[[book](http://athenasc.com/probbook.html)\] \[[online course](https://www.edx.org/course/probability-the-science-of-uncertainty-and-data-0)\] \[[youtube playlist](https://youtube.com/playlist?list=PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6)\]
 -   Bernoulli's Fallacy \[[book](http://cup.columbia.edu/book/bernoullis-fallacy/9780231199957)\]
