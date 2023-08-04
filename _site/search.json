@@ -25,7 +25,14 @@
     "href": "notes/statistical_inference.html#interpretations-of-probability",
     "title": "Statistical inference",
     "section": "Interpretations of probability",
-    "text": "Interpretations of probability\nobjective vs. subjective\nevent vs. proposition language"
+    "text": "Interpretations of probability\nXXX"
+  },
+  {
+    "objectID": "notes/statistical_inference.html#from-probability-theory-to-statistical-inference",
+    "href": "notes/statistical_inference.html#from-probability-theory-to-statistical-inference",
+    "title": "Statistical inference",
+    "section": "From probability theory to statistical inference",
+    "text": "From probability theory to statistical inference\n\nBayes’ theorem and inverse probability\n\\(P(A \\mid B) = \\frac{P(A) \\times P(B \\mid A)}{P(B)}\\)\n\\(A = H = \\text{hypothesis}\\)\n\\(B = D = \\text{data/observations}\\)\n\\(P(H \\mid D) = \\frac{P(H) \\times P(D \\mid H)}{P(D)}\\)\n\\(\\text{posterior} = \\frac{\\text{prior} \\times \\text{likelihood}}{\\text{evidence}}\\)\n\n\nBernoulli’s fallacy\na.k.a. fallacy of the transposed conditional; base rate fallacy; prosecutor’s fallacy\n\\(P(H \\mid D) = \\frac{P(H) \\times P(D \\mid H)}{P(H) \\times P(D \\mid H) + P(\\lnot H) \\times P(D \\mid \\lnot H)}\\)"
   },
   {
     "objectID": "notes/statistical_inference.html#references",
@@ -67,42 +74,42 @@
     "href": "notes/probability_theory.html#probability-as-a-mathematical-object",
     "title": "Probability theory: The logic of science",
     "section": "Probability as a mathematical object",
-    "text": "Probability as a mathematical object\nIn mathematics, a function from a set \\(X\\) to a set \\(Y\\) is an assignment of an element \\(y\\) of \\(Y\\) to each element \\(x\\) of \\(X\\).\nINPUT: \\(x\\)\nFUNCTION: \\(f\\)\nOUTPUT: \\(y = f(x)\\)\n\\(f: X \\rightarrow Y\\)\nProbability is a function \\(P\\) that assigns a number between 0 and 1 to each subset \\(A\\) of a sample space \\(\\Omega\\) (or \\(S\\) or \\(U\\) for “universal set”, i.e., the non-empty set of all possible outcomes of a random phenomemon/process/“experiment”, e.g., tossing a coin).\n\\(A \\subseteq \\Omega\\), an event/proposition\n\\(P(A)\\), the probability of \\(A\\)\nGiven an event space \\(E\\) (i.e., the set of all possible subsets of a sample space \\(\\Omega\\)), the function \\(P: E \\rightarrow [0, 1]\\) must satisfy a number of axioms (Kolmogorov axioms or Cox’s theorem):\n\n\\(P(A) \\ge 0\\)\n\\(P(\\Omega) = 1\\)\n\\(P\\) is countably additive: if \\(A_1, A_2, \\ldots, A_n\\) are pairwise disjoint sets, then \\(P(\\cup_{i=1}^n A_i) = \\sum_{i=1}^n P(A_i)\\).\n\nAll rules of probability theory are derived from these axioms, for example:\n\\(0 \\le P(A) \\le 1\\)\n\\(P(\\emptyset) = 0\\)\nProbability theory is the study of probability as a mathematical object."
+    "text": "Probability as a mathematical object\nIn mathematics, a function is an assignment of an element \\(y\\) of a set \\(Y\\) to each element \\(x\\) of a set \\(X\\).\nINPUT: \\(x\\)\nFUNCTION: \\(f\\)\nOUTPUT: \\(y = f(x)\\)\n\\(f: X \\rightarrow Y\\)\nProbability is a function \\(P\\) that assigns a number between 0 and 1 to each subset \\(A\\) of a sample space \\(\\Omega\\) (i.e., the non-empty set of all possible outcomes of a random phenomemon/process/“experiment”, e.g., tossing a coin).\n\\(A\\) is an event/proposition\n\\(P(A)\\) is the probability of \\(A\\) (i.e., a number between 0 and 1)\n\\(A \\subseteq \\Omega\\)\n\\(E\\) is an event space (i.e., the set of all possible subsets of a sample space \\(\\Omega\\))\n\\(A \\in E\\)\nProbability (i.e., the function \\(P: E \\rightarrow [0, 1]\\)) must satisfy a number of axioms (Kolmogorov axioms or Cox’s theorem):\n\n\\(P(A) \\ge 0\\)\n\\(P(\\Omega) = 1\\)\n\\(P\\) is countably additive: if \\(A_1, A_2, \\ldots, A_n\\) are pairwise disjoint events, then \\(P(\\cup_{i=1}^n A_i) = \\sum_{i=1}^n P(A_i)\\).\n\nAll rules of probability are derived from these axioms, for example:\n\\(0 \\le P(A) \\le 1\\)\n\\(P(\\emptyset) = 0\\)\nProbability theory is the study of probability as a mathematical object."
   },
   {
-    "objectID": "notes/probability_theory.html#mutually-exclusive-events",
-    "href": "notes/probability_theory.html#mutually-exclusive-events",
+    "objectID": "notes/probability_theory.html#mutually-exclusivedisjoint-events",
+    "href": "notes/probability_theory.html#mutually-exclusivedisjoint-events",
     "title": "Probability theory: The logic of science",
-    "section": "Mutually exclusive events",
-    "text": "Mutually exclusive events"
+    "section": "Mutually exclusive/disjoint events",
+    "text": "Mutually exclusive/disjoint events\n\\(P(A\\ \\text{and}\\ B) = 0\\)"
   },
   {
     "objectID": "notes/probability_theory.html#independent-events",
     "href": "notes/probability_theory.html#independent-events",
     "title": "Probability theory: The logic of science",
     "section": "Independent events",
-    "text": "Independent events"
+    "text": "Independent events\n\\(P(A \\mid B) = P(A)\\)"
   },
   {
     "objectID": "notes/probability_theory.html#the-rules-of-probability",
     "href": "notes/probability_theory.html#the-rules-of-probability",
     "title": "Probability theory: The logic of science",
     "section": "The rules of probability",
-    "text": "The rules of probability\nnegation\ndisjunction (OR, sum/addition rule)\nconjunction (AND, product/multiplication rule)"
+    "text": "The rules of probability\n\nNegation (NOT)\n\\(P(\\text{not-}A) = 1 - P(A)\\)\nAlternative notation for \\(P(\\text{not-}A)\\):\n\n\\(P(A')\\)\n\\(P(A^\\complement)\\)\n\\(P(\\overline{A})\\)\n\\(P(\\lnot A)\\)\n\n\n\nDisjunction (OR, sum/addition rule)\n\\(P(A\\ \\text{or}\\ B) = P(A) + P(B) - P(A\\ \\text{and}\\ B)\\)\nAlternative notation for \\(P(A\\ \\text{or}\\ B)\\):\n\n\\(P(A \\cup B)\\)\n\nIf \\(A\\) and \\(B\\) are mutually exclusive/disjoint events: \\(P(A \\cup B) = P(A) + P(B)\\)\nThe disjunction rule is commutative: \\(P(A \\cup B) = P(B \\cup A)\\)\n\n\nConjunction (AND, product/multiplication rule)\n\\(P(A\\ \\text{and} \\ B) = P(A) \\times P(B \\mid A)\\)\nAlternative notation for \\(P(A\\ \\text{and} \\ B)\\):\n\n\\(P(AB)\\)\n\\(P(A,B)\\)\n\\(P(A \\cap B)\\)\n\nIf \\(A\\) and \\(B\\) are independent events: \\(P(A \\cap B) = P(A) \\times P(B)\\)\nThe conjunction rule is commutative: \\(P(A \\cap B) = P(B \\cap A)\\)"
   },
   {
     "objectID": "notes/probability_theory.html#conditional-probability",
     "href": "notes/probability_theory.html#conditional-probability",
     "title": "Probability theory: The logic of science",
     "section": "Conditional probability",
-    "text": "Conditional probability"
+    "text": "Conditional probability\n\\(P(A \\mid B) = \\frac{P(A\\ \\text{and}\\ B)}{P(B)}\\)\n\\(P(A \\mid B) \\ne P(B \\mid A)\\)"
   },
   {
     "objectID": "notes/probability_theory.html#inverse-probability-bayes-theorem-or-bayes-rule",
     "href": "notes/probability_theory.html#inverse-probability-bayes-theorem-or-bayes-rule",
     "title": "Probability theory: The logic of science",
     "section": "Inverse probability: Bayes’ theorem (or Bayes’ rule)",
-    "text": "Inverse probability: Bayes’ theorem (or Bayes’ rule)\nFrom probability theory to statistical inference\n\\(\\text{posterior} = \\text{prior} \\times \\text{likelihood} \\div \\text{evidence}\\)"
+    "text": "Inverse probability: Bayes’ theorem (or Bayes’ rule)\n\\(P(A\\ \\text{and}\\ B) = P(B\\ \\text{and}\\ A)\\)\n\\(P(A) \\times P(B \\mid A) = P(B) \\times P(A \\mid B)\\)\n\\(P(A \\mid B) = \\frac{P(A) \\times P(B \\mid A)}{P(B)}\\)"
   },
   {
     "objectID": "notes/probability_theory.html#references",

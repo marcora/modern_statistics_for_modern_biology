@@ -8,9 +8,27 @@ date: 2023-08-03
 
 ## Interpretations of probability
 
-objective vs. subjective
+XXX
 
-event vs. proposition language
+## From probability theory to statistical inference
+
+### Bayes' theorem and inverse probability
+
+$P(A \mid B) = \frac{P(A) \times P(B \mid A)}{P(B)}$
+
+$A = H = \text{hypothesis}$
+
+$B = D = \text{data/observations}$
+
+$P(H \mid D) = \frac{P(H) \times P(D \mid H)}{P(D)}$
+
+$\text{posterior} = \frac{\text{prior} \times \text{likelihood}}{\text{evidence}}$
+
+### Bernoulli's fallacy
+
+a.k.a. fallacy of the transposed conditional; base rate fallacy; prosecutor's fallacy
+
+$P(H \mid D) = \frac{P(H) \times P(D \mid H)}{P(H) \times P(D \mid H) + P(\lnot H) \times P(D \mid \lnot H)}$
 
 ## References
 

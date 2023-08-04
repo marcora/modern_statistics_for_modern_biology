@@ -80,7 +80,7 @@ Better fit for the classical or frequentist/"objective" interpretations of proba
 
 ## Probability as a mathematical object
 
-In mathematics, a function from a set $X$ to a set $Y$ is an assignment of an element $y$ of $Y$ to each element $x$ of $X$.
+In mathematics, a function is an assignment of an element $y$ of a set $Y$ to each element $x$ of a set $X$.
 
 INPUT: $x$
 
@@ -90,19 +90,25 @@ OUTPUT: $y = f(x)$
 
 $f: X \rightarrow Y$
 
-Probability is a function $P$ that assigns a number between 0 and 1 to each subset $A$ of a sample space $\Omega$ (or $S$ or $U$ for "universal set", i.e., the non-empty set of all possible outcomes of a random phenomemon/process/"experiment", e.g., tossing a coin).
+Probability is a function $P$ that assigns a number between 0 and 1 to each subset $A$ of a sample space $\Omega$ (i.e., the non-empty set of all possible outcomes of a random phenomemon/process/"experiment", e.g., tossing a coin).
 
-$A \subseteq \Omega$, an event/proposition
+$A$ is an event/proposition
 
-$P(A)$, the probability of $A$
+$P(A)$ is the probability of $A$ (i.e., a number between 0 and 1)
 
-Given an event space $E$ (i.e., the set of all possible subsets of a sample space $\Omega$), the function $P: E \rightarrow [0, 1]$ must satisfy a number of axioms (Kolmogorov axioms or Cox's theorem):
+$A \subseteq \Omega$
+
+$E$ is an event space (i.e., the set of all possible subsets of a sample space $\Omega$)
+
+$A \in E$
+
+Probability (i.e., the function $P: E \rightarrow [0, 1]$) must satisfy a number of axioms (Kolmogorov axioms or Cox's theorem):
 
 -   $P(A) \ge 0$
 -   $P(\Omega) = 1$
--   $P$ is countably additive: if $A_1, A_2, \ldots, A_n$ are pairwise disjoint sets, then $P(\cup_{i=1}^n A_i) = \sum_{i=1}^n P(A_i)$.
+-   $P$ is countably additive: if $A_1, A_2, \ldots, A_n$ are pairwise disjoint events, then $P(\cup_{i=1}^n A_i) = \sum_{i=1}^n P(A_i)$.
 
-All rules of probability theory are derived from these axioms, for example:
+All rules of probability are derived from these axioms, for example:
 
 $0 \le P(A) \le 1$
 
@@ -110,25 +116,66 @@ $P(\emptyset) = 0$
 
 Probability theory is the study of probability as a mathematical object.
 
-## Mutually exclusive events
+## Mutually exclusive/disjoint events
+
+$P(A\ \text{and}\ B) = 0$
 
 ## Independent events
 
+$P(A \mid B) = P(A)$
+
 ## The rules of probability
 
-negation
+### Negation (NOT)
 
-disjunction (OR, sum/addition rule)
+$P(\text{not-}A) = 1 - P(A)$
 
-conjunction (AND, product/multiplication rule)
+Alternative notation for $P(\text{not-}A)$:
+
+-   $P(A')$
+-   $P(A^\complement)$
+-   $P(\overline{A})$
+-   $P(\lnot A)$
+
+### Disjunction (OR, sum/addition rule)
+
+$P(A\ \text{or}\ B) = P(A) + P(B) - P(A\ \text{and}\ B)$
+
+Alternative notation for $P(A\ \text{or}\ B)$:
+
+-   $P(A \cup B)$
+
+If $A$ and $B$ are mutually exclusive/disjoint events: $P(A \cup B) = P(A) + P(B)$
+
+The disjunction rule is commutative: $P(A \cup B) = P(B \cup A)$
+
+### Conjunction (AND, product/multiplication rule)
+
+$P(A\ \text{and} \ B) = P(A) \times P(B \mid A)$
+
+Alternative notation for $P(A\ \text{and} \ B)$:
+
+-   $P(AB)$
+-   $P(A,B)$
+-   $P(A \cap B)$
+
+If $A$ and $B$ are independent events: $P(A \cap B) = P(A) \times P(B)$
+
+The conjunction rule is commutative: $P(A \cap B) = P(B \cap A)$
 
 ## Conditional probability
 
+$P(A \mid B) = \frac{P(A\ \text{and}\ B)}{P(B)}$
+
+$P(A \mid B) \ne P(B \mid A)$
+
 ## Inverse probability: Bayes' theorem (or Bayes' rule)
 
-From probability theory to statistical inference
+$P(A\ \text{and}\ B) = P(B\ \text{and}\ A)$
 
-$\text{posterior} = \text{prior} \times \text{likelihood} \div \text{evidence}$
+$P(A) \times P(B \mid A) = P(B) \times P(A \mid B)$
+
+$P(A \mid B) = \frac{P(A) \times P(B \mid A)}{P(B)}$
 
 ## References
 
