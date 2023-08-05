@@ -4,7 +4,7 @@ author: "Edoardo Marcora"
 date: 2023-08-02
 ---
 
-## Why study logic and probability?
+## Why study probability?
 
 -   **Probability** is an essential component of **inductive reasoning** (i.e., reasoning with probabilities), which plays a key role in **scientific reasoning**. Unfortunately, humans suck at inductive reasoning; we suffer from "probability blindness" and are often incorrect/illogical/fallacious when reasoning with probabilities.
 -   **Probability theory** is the foundation of **statistical inference** (i.e., learning from data under uncertainty), the cornerstone of modern data analysis.
@@ -12,9 +12,9 @@ date: 2023-08-02
 ## Inductive vs. deductive reasoning
 
 -   **Logic** is the study of **correct reasoning**.
--   Reasoning is the process of drawing a **conclusion** from a set of **premises**.
+-   Reasoning is the process of drawing a conclusion from a set of premises.
 -   Reasoning is put into words in the form of an argument.
--   An **argument** is a set of statements/propositions; more specifically a set of premises and a conclusion.
+-   An **argument** is a set of statements/propositions; more specifically **one or more premises and a conclusion**.
 
 $$
 \begin{align}
@@ -26,38 +26,19 @@ $$
 \end{align}
 $$
 
--   A **statement/proposition** is a sentence that asserts a claim that is either true or false.
--   In an argument, the premises are the reasons or evidence given in support of the conclusion. The conclusion is the claim that the argument seeks to prove as definitely true (deductive argument) or likely true (inductive argument) assuming that the premises are true.
--   Conclusion indicator words: thus, ergo, hence, therefore, thus, consequently, it follows that, etc.
--   Premise indicator words: since, because, given that, follows from, assuming that, considering that, etc.
--   A deductive argument seeks to prove that the conclusion is definitely true assuming that the premises are true. In contrast, an inductive argument seeks to prove that the conclusion is likely true assuming that the premises are true.
+-   A **statement/proposition** is a sentence asserting a claim that is either true or false.
+-   In an argument, the premises are the reasons or evidence given in support of the conclusion. The conclusion is the claim that the argument seeks to prove as definitely true (**deductive argument**) or probably true (**inductive argument**) assuming that the premises are true.
 -   Premises and conclusions are either true or false depending on whether they are in accord with reality.
--   A valid deductive argument ensures the conclusion is definitely true assuming that the premises are true. The conclusion follows with certainty from the premises, as the premises fully entail the conclusion.
--   A strong inductive argument ensures the conclusion is likely true assuming that the premises are true. The conclusion follows with high probability from the premises, as the premises partially entail the conclusion.
+
+![](/_images/reasoning_flowchart.png)
+
+-   A **valid deductive argument** ensures the conclusion is definitely true if the premises are true. The conclusion follows with certainty from the premises, as the premises fully entail the conclusion. If the premises are actually true then a valid deductive argument is also a **sound argument**.
+-   A **strong inductive argument** ensures the conclusion is likely true if the premises are true. The conclusion follows with high probability from the premises, as the premises partially entail the conclusion. If the premises are actually true then a strong inductive argument is also a **cogent argument**.
 -   Probability can be understood as the measure of the degree to which a conclusion follows from the premises. It indicates the strength of the entailment between the premises and the conclusion.
 -   How likely is the conclusion given the premises? Probability theory can help us find the answer!
 -   How likely does the conclusion need to be before it's rational to accept it? Decision theory (e.g., cost-benefit analysis) can help us find the answer!
--   **Modus ponens**:
 
-$$
-\begin{align}
-& A \rightarrow B \\
-& A \\
-& \overline{\therefore B}
-\end{align}
-$$
-
--   **Modus tollens**:
-
-$$
-\begin{aligned}
-& A \rightarrow B \\
-& \text{not-}A \\
-& \overline{\therefore \text{not-}B}
-\end{aligned}
-$$
-
-## Proposition vs. event language
+## Probability: Proposition vs. event language
 
 Two ways of asking the same question!
 
@@ -188,7 +169,7 @@ $P(A \mid B) = \frac{P(A) \times P(B \mid A)}{P(B)}$
 
 ## References
 
--   Logic: Fundamental Concepts \[[youtube playlist](https://youtube.com/playlist?list=PL6a98igNglIzgNAdPMpfOA71KVng49hwD)\]
--   Reasoning with Probabilities \[[youtube playlist](https://youtube.com/playlist?list=PL1D85E19690485A3E)\]
--   Introduction to Probability \[[book](http://athenasc.com/probbook.html)\] \[[online course](https://www.edx.org/course/probability-the-science-of-uncertainty-and-data-0)\] \[[youtube playlist](https://youtube.com/playlist?list=PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6)\]
+-   Deductive and Inductive Reasoning Flow Chart \[[video](https://youtu.be/6Sg9zI-GNsI)\]
+-   Reasoning with Probabilities \[[videos](https://youtube.com/playlist?list=PL1D85E19690485A3E)\]
+-   Introduction to Probability \[[book](http://athenasc.com/probbook.html)\] \[[online course](https://www.edx.org/course/probability-the-science-of-uncertainty-and-data-0)\] \[[videos](https://youtube.com/playlist?list=PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6)\]
 -   Bernoulli's Fallacy \[[book](http://cup.columbia.edu/book/bernoullis-fallacy/9780231199957)\]

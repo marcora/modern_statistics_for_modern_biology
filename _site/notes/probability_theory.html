@@ -128,9 +128,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#why-study-logic-and-probability" id="toc-why-study-logic-and-probability" class="nav-link active" data-scroll-target="#why-study-logic-and-probability">Why study logic and probability?</a></li>
+  <li><a href="#why-study-probability" id="toc-why-study-probability" class="nav-link active" data-scroll-target="#why-study-probability">Why study probability?</a></li>
   <li><a href="#inductive-vs.-deductive-reasoning" id="toc-inductive-vs.-deductive-reasoning" class="nav-link" data-scroll-target="#inductive-vs.-deductive-reasoning">Inductive vs.&nbsp;deductive reasoning</a></li>
-  <li><a href="#proposition-vs.-event-language" id="toc-proposition-vs.-event-language" class="nav-link" data-scroll-target="#proposition-vs.-event-language">Proposition vs.&nbsp;event language</a></li>
+  <li><a href="#probability-proposition-vs.-event-language" id="toc-probability-proposition-vs.-event-language" class="nav-link" data-scroll-target="#probability-proposition-vs.-event-language">Probability: Proposition vs.&nbsp;event language</a></li>
   <li><a href="#probability-as-a-mathematical-object" id="toc-probability-as-a-mathematical-object" class="nav-link" data-scroll-target="#probability-as-a-mathematical-object">Probability as a mathematical object</a></li>
   <li><a href="#mutually-exclusivedisjoint-events" id="toc-mutually-exclusivedisjoint-events" class="nav-link" data-scroll-target="#mutually-exclusivedisjoint-events">Mutually exclusive/disjoint events</a></li>
   <li><a href="#independent-events" id="toc-independent-events" class="nav-link" data-scroll-target="#independent-events">Independent events</a></li>
@@ -178,8 +178,8 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="why-study-logic-and-probability" class="level2">
-<h2 class="anchored" data-anchor-id="why-study-logic-and-probability">Why study logic and probability?</h2>
+<section id="why-study-probability" class="level2">
+<h2 class="anchored" data-anchor-id="why-study-probability">Why study probability?</h2>
 <ul>
 <li><strong>Probability</strong> is an essential component of <strong>inductive reasoning</strong> (i.e., reasoning with probabilities), which plays a key role in <strong>scientific reasoning</strong>. Unfortunately, humans suck at inductive reasoning; we suffer from “probability blindness” and are often incorrect/illogical/fallacious when reasoning with probabilities.</li>
 <li><strong>Probability theory</strong> is the foundation of <strong>statistical inference</strong> (i.e., learning from data under uncertainty), the cornerstone of modern data analysis.</li>
@@ -189,9 +189,9 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="inductive-vs.-deductive-reasoning">Inductive vs.&nbsp;deductive reasoning</h2>
 <ul>
 <li><strong>Logic</strong> is the study of <strong>correct reasoning</strong>.</li>
-<li>Reasoning is the process of drawing a <strong>conclusion</strong> from a set of <strong>premises</strong>.</li>
+<li>Reasoning is the process of drawing a conclusion from a set of premises.</li>
 <li>Reasoning is put into words in the form of an argument.</li>
-<li>An <strong>argument</strong> is a set of statements/propositions; more specifically a set of premises and a conclusion.</li>
+<li>An <strong>argument</strong> is a set of statements/propositions; more specifically <strong>one or more premises and a conclusion</strong>.</li>
 </ul>
 <p><span class="math display">\[
 \begin{align}
@@ -203,39 +203,21 @@ ul.task-list li input[type="checkbox"] {
 \end{align}
 \]</span></p>
 <ul>
-<li>A <strong>statement/proposition</strong> is a sentence that asserts a claim that is either true or false.</li>
-<li>In an argument, the premises are the reasons or evidence given in support of the conclusion. The conclusion is the claim that the argument seeks to prove as definitely true (deductive argument) or likely true (inductive argument) assuming that the premises are true.</li>
-<li>Conclusion indicator words: thus, ergo, hence, therefore, thus, consequently, it follows that, etc.</li>
-<li>Premise indicator words: since, because, given that, follows from, assuming that, considering that, etc.</li>
-<li>A deductive argument seeks to prove that the conclusion is definitely true assuming that the premises are true. In contrast, an inductive argument seeks to prove that the conclusion is likely true assuming that the premises are true.</li>
+<li>A <strong>statement/proposition</strong> is a sentence asserting a claim that is either true or false.</li>
+<li>In an argument, the premises are the reasons or evidence given in support of the conclusion. The conclusion is the claim that the argument seeks to prove as definitely true (<strong>deductive argument</strong>) or probably true (<strong>inductive argument</strong>) assuming that the premises are true.</li>
 <li>Premises and conclusions are either true or false depending on whether they are in accord with reality.</li>
-<li>A valid deductive argument ensures the conclusion is definitely true assuming that the premises are true. The conclusion follows with certainty from the premises, as the premises fully entail the conclusion.</li>
-<li>A strong inductive argument ensures the conclusion is likely true assuming that the premises are true. The conclusion follows with high probability from the premises, as the premises partially entail the conclusion.</li>
+</ul>
+<p><img src="../_images/reasoning_flowchart.png" class="img-fluid"></p>
+<ul>
+<li>A <strong>valid deductive argument</strong> ensures the conclusion is definitely true if the premises are true. The conclusion follows with certainty from the premises, as the premises fully entail the conclusion. If the premises are actually true then a valid deductive argument is also a <strong>sound argument</strong>.</li>
+<li>A <strong>strong inductive argument</strong> ensures the conclusion is likely true if the premises are true. The conclusion follows with high probability from the premises, as the premises partially entail the conclusion. If the premises are actually true then a strong inductive argument is also a <strong>cogent argument</strong>.</li>
 <li>Probability can be understood as the measure of the degree to which a conclusion follows from the premises. It indicates the strength of the entailment between the premises and the conclusion.</li>
 <li>How likely is the conclusion given the premises? Probability theory can help us find the answer!</li>
 <li>How likely does the conclusion need to be before it’s rational to accept it? Decision theory (e.g., cost-benefit analysis) can help us find the answer!</li>
-<li><strong>Modus ponens</strong>:</li>
 </ul>
-<p><span class="math display">\[
-\begin{align}
-&amp; A \rightarrow B \\
-&amp; A \\
-&amp; \overline{\therefore B}
-\end{align}
-\]</span></p>
-<ul>
-<li><strong>Modus tollens</strong>:</li>
-</ul>
-<p><span class="math display">\[
-\begin{aligned}
-&amp; A \rightarrow B \\
-&amp; \text{not-}A \\
-&amp; \overline{\therefore \text{not-}B}
-\end{aligned}
-\]</span></p>
 </section>
-<section id="proposition-vs.-event-language" class="level2">
-<h2 class="anchored" data-anchor-id="proposition-vs.-event-language">Proposition vs.&nbsp;event language</h2>
+<section id="probability-proposition-vs.-event-language" class="level2">
+<h2 class="anchored" data-anchor-id="probability-proposition-vs.-event-language">Probability: Proposition vs.&nbsp;event language</h2>
 <p>Two ways of asking the same question!</p>
 <p><em>“What is the probability that the coin will land heads?”</em></p>
 <p><strong>Proposition</strong>: <em>“the coin will land heads”</em></p>
@@ -333,9 +315,9 @@ ul.task-list li input[type="checkbox"] {
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>
 <ul>
-<li>Logic: Fundamental Concepts [<a href="https://youtube.com/playlist?list=PL6a98igNglIzgNAdPMpfOA71KVng49hwD">youtube playlist</a>]</li>
-<li>Reasoning with Probabilities [<a href="https://youtube.com/playlist?list=PL1D85E19690485A3E">youtube playlist</a>]</li>
-<li>Introduction to Probability [<a href="http://athenasc.com/probbook.html">book</a>] [<a href="https://www.edx.org/course/probability-the-science-of-uncertainty-and-data-0">online course</a>] [<a href="https://youtube.com/playlist?list=PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6">youtube playlist</a>]</li>
+<li>Deductive and Inductive Reasoning Flow Chart [<a href="https://youtu.be/6Sg9zI-GNsI">video</a>]</li>
+<li>Reasoning with Probabilities [<a href="https://youtube.com/playlist?list=PL1D85E19690485A3E">videos</a>]</li>
+<li>Introduction to Probability [<a href="http://athenasc.com/probbook.html">book</a>] [<a href="https://www.edx.org/course/probability-the-science-of-uncertainty-and-data-0">online course</a>] [<a href="https://youtube.com/playlist?list=PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6">videos</a>]</li>
 <li>Bernoulli’s Fallacy [<a href="http://cup.columbia.edu/book/bernoullis-fallacy/9780231199957">book</a>]</li>
 </ul>
 
