@@ -50,7 +50,7 @@ a.k.a. fallacy of the transposed conditional; base rate fallacy; prosecutor's fa
 
 $P(H \mid D) = \frac{P(H) \times P(D \mid H)}{P(H) \times P(D \mid H) + P(\lnot H) \times P(D \mid \lnot H)}$
 
-## References
+## Additional resources
 
 -   Deductive and Inductive Reasoning Flow Chart \[[video](https://youtu.be/6Sg9zI-GNsI)\]
 -   Reasoning with Probabilities \[[videos](https://youtube.com/playlist?list=PL1D85E19690485A3E)\]

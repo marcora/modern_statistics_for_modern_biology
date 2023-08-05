@@ -1,9 +1,5 @@
 [
   {
-    "listing": "/labs/index.html",
-    "items": []
-  },
-  {
     "listing": "/assignments/index.html",
     "items": []
   },
@@ -13,6 +9,10 @@
       "/notes/probability_theory.html",
       "/notes/statistical_inference.html"
     ]
+  },
+  {
+    "listing": "/exercises/index.html",
+    "items": []
   },
   {
     "listing": "/lectures/index.html",

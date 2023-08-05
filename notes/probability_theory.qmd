@@ -7,9 +7,9 @@ date: 2023-08-02
 ## Why study probability?
 
 -   **Probability** is an essential component of **inductive reasoning** (i.e., reasoning with probabilities), which plays a key role in **scientific reasoning**. Unfortunately, humans suck at inductive reasoning; we suffer from "probability blindness" and are often incorrect/illogical/fallacious when reasoning with probabilities.
--   **Probability theory** is the foundation of **statistical inference** (i.e., learning from data under uncertainty), the cornerstone of modern data analysis.
+-   **Probability theory** is the foundation of **statistical inference** (i.e., learning from data under uncertainty), the cornerstone of modern data analysis and scientific research.
 
-## Inductive vs. deductive reasoning
+## Logic: Inductive vs. deductive reasoning
 
 -   **Logic** is the study of **correct reasoning**.
 -   Reasoning is the process of drawing a conclusion from a set of premises.
@@ -40,67 +40,98 @@ $$
 
 ## Probability: Proposition vs. event language
 
-Two ways of asking the same question!
+Two ways of asking the same question:
 
-*"What is the probability that the coin will land heads?"*
+1.  *"What is the probability that the coin will land heads?"*
+    -   **Proposition**: *"the coin will land heads"*
+    -   **Question**: What is the probability that this **proposition** is **true**?
+    -   A proposition is a sentence that asserts a claim that is either true or false.
+    -   Better fit for the logical or bayesian/"subjective" interpretations of probability.
+2.  *"What is the probability of the coin landing heads?"*
+    -   **Event**: *"the coin landing heads"*
+    -   **Question**: What is the probability that this **event** will **occur**?
+    -   An event in not a linguistic entity, it does not assert anything (that is either true or false). An event is a state of affairs in the world that either occurs or doesn't occur.
+    -   Better fit for the classical or frequentist/"objective" interpretations of probability.
 
-**Proposition**: *"the coin will land heads"*
+## Set theory
 
-**Question**: What is the probability that this **proposition** is **true**?
+A **set** is a collection of objects, typically referred to as **elements** (or members) of the set, e.g.:
 
-A proposition is a sentence that asserts a claim that is either true or false.
-
-Better fit for the logical or bayesian/"subjective" interpretations of probability.
-
-------------------------------------------------------------------------
-
-*"What is the probability of the coin landing heads?"*
-
-**Event**: *"the coin landing heads"*
-
-**Question**: What is the probability that this **event** will **occur**?
-
-An event in not a linguistic entity, it does not assert anything (that is either true or false). An event is a state of affairs in the world that either occurs or doesn't occur.
-
-Better fit for the classical or frequentist/"objective" interpretations of probability.
+-   $\{-7, 0, 3, 5\}$
+-   **natural numbers**: $\mathbb{N} = \{1,2,3,\ldots \}\quad \text{or} \quad \{0, 1,2,3,\ldots \}$
+-   **integers**: $\mathbb{Z} = \{ \ldots, -3, -2, -1, 0, 1, 2, 3, \ldots \}$
+-   **real numbers**: $\mathbb{R}$
+-   $\{ ⚀, ⚁, ⚂, ⚃, ⚄, ⚅ \}$
+-   $\{ 🐱, 🐶, 🐰, 🐭, 🐻, 🐷, 🐵 \}$
+-   $\{ 🟥, 🟩, 🟦, 🔴, 🟢, 🔵 \}$
 
 ## Probability as a mathematical object
 
+Probability theory is the study of probability as a mathematical object; more specifically, probability is a function that satisfies the axioms of probability.
+
 In mathematics, a function is an assignment of an element $y$ of a set $Y$ to each element $x$ of a set $X$.
+
+FUNCTION: $f: X \rightarrow Y$
 
 INPUT: $x$
 
-FUNCTION: $f$
-
 OUTPUT: $y = f(x)$
 
-$f: X \rightarrow Y$
+The **sample space** $\Omega$ is the set of all possible outcomes of a random phenomenon/process/"experiment", e.g., tossing a coin.
 
-Probability is a function $P$ that assigns a number between 0 and 1 to each subset $A$ of a sample space $\Omega$ (i.e., the non-empty set of all possible outcomes of a random phenomemon/process/"experiment", e.g., tossing a coin).
+The power set of a set $S$ is the set of all subsets of $S$, including the empty set $\emptyset$ and $S$ itself.
 
-$A$ is an event/proposition
+The **event space** $F$ is the power set of the sample space $\Omega$.
 
-$P(A)$ is the probability of $A$ (i.e., a number between 0 and 1)
+An **event** (or proposition) $A$ is a subset of the sample space $\Omega$:
 
 $A \subseteq \Omega$
 
-$E$ is an event space (i.e., the set of all possible subsets of a sample space $\Omega$)
+and therefore an element of the event space $F$:
 
-$A \in E$
+$A \in F$
 
-Probability (i.e., the function $P: E \rightarrow [0, 1]$) must satisfy a number of axioms (Kolmogorov axioms or Cox's theorem):
+**Probability** is a function $P$ that assigns a real number \[between 0 and 1\] to each event of an event space:
 
--   $P(A) \ge 0$
+$P : F \rightarrow \mathbb{R}$
+
+$P(A)$ is the probability of event (or proposition) $A$, i.e., a real number \[between 0 and 1\].
+
+A real number is a number that can be used to measure a continuous one-dimensional quantity such as a distance, duration, temperature, mass, or (in this case) uncertainty.
+
+## The axioms of probability
+
+Probability as a function $P : F \rightarrow \mathbb{R}$ must satisfy a number of axioms (Kolmogorov axioms; see also [Cox's theorem](https://en.wikipedia.org/wiki/Cox%27s_theorem) as an alternative):
+
+-   $P(A) \ge 0 \quad \forall A \in F$
 -   $P(\Omega) = 1$
--   $P$ is countably additive: if $A_1, A_2, \ldots, A_n$ are pairwise disjoint events, then $P(\cup_{i=1}^n A_i) = \sum_{i=1}^n P(A_i)$.
+-   $\text{if} \quad A_1, A_2, \ldots, A_n \ \text{are disjoint/mutually exclusive events} \quad \text{then} \quad P(\cup_{i=1}^n A_i) = \sum_{i=1}^n P(A_i)$
 
 All rules of probability are derived from these axioms, for example:
 
-$0 \le P(A) \le 1$
+$0 \le P(A) \le 1 \quad \forall A \in F$
 
 $P(\emptyset) = 0$
 
-Probability theory is the study of probability as a mathematical object.
+$\text{if} \quad A \subseteq B \quad \text{then} \quad P(A) \le P(B)$
+
+## Example: A single toin coss
+
+Consider a single coin toss and assume that the coin will either land heads ($H$) or tails ($T$) (but not both):
+
+$\Omega = \{H, T\}$
+
+$F = \{ \emptyset, \{H\}, \{T\}, \{H,T\} \}$
+
+If we assume that the coin is fair (i.e., it has equal probability of landing heads or tails):
+
+$P(\emptyset) = 0$
+
+$P(\{H,T\}) = P(\Omega) = 1$
+
+$P(\{H,T\}) = P(\{H\}) + P(\{T\}) = 1$
+
+$P(\{H\}) = P(\{T\}) = 0.5$
 
 ## Mutually exclusive/disjoint events
 
@@ -167,7 +198,7 @@ $P(A) \times P(B \mid A) = P(B) \times P(A \mid B)$
 
 $P(A \mid B) = \frac{P(A) \times P(B \mid A)}{P(B)}$
 
-## References
+## Additional resources
 
 -   Deductive and Inductive Reasoning Flow Chart \[[video](https://youtu.be/6Sg9zI-GNsI)\]
 -   Reasoning with Probabilities \[[videos](https://youtube.com/playlist?list=PL1D85E19690485A3E)\]

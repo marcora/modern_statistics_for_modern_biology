@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "labs/index.html",
-    "href": "labs/index.html",
-    "title": "Labs",
-    "section": "",
-    "text": "No matching items"
-  },
-  {
     "objectID": "assignments/index.html",
     "href": "assignments/index.html",
     "title": "Assignments",
@@ -35,46 +28,67 @@
     "text": "From probability theory to statistical inference\n\nModus ponens\n\\[\n\\begin{align}\n& A \\rightarrow B \\\\\n& A \\\\\n& \\overline{\\therefore B}\n\\end{align}\n\\]\n\n\nModus tollens\n\\[\n\\begin{aligned}\n& A \\rightarrow B \\\\\n& \\text{not-}B \\\\\n& \\overline{\\therefore \\text{not-}A}\n\\end{aligned}\n\\]\n\n\nInverse probability: Bayes’ theorem\n\\(P(A \\mid B) = \\frac{P(A) \\times P(B \\mid A)}{P(B)}\\)\n\\(A = H = \\text{hypothesis}\\)\n\\(B = D = \\text{data/observations}\\)\n\\(P(H \\mid D) = \\frac{P(H) \\times P(D \\mid H)}{P(D)}\\)\n\\(\\text{posterior} = \\frac{\\text{prior} \\times \\text{likelihood}}{\\text{evidence}}\\)\n\n\nBernoulli’s fallacy\na.k.a. fallacy of the transposed conditional; base rate fallacy; prosecutor’s fallacy\n\\(P(H \\mid D) = \\frac{P(H) \\times P(D \\mid H)}{P(H) \\times P(D \\mid H) + P(\\lnot H) \\times P(D \\mid \\lnot H)}\\)"
   },
   {
-    "objectID": "notes/statistical_inference.html#references",
-    "href": "notes/statistical_inference.html#references",
+    "objectID": "notes/statistical_inference.html#additional-resources",
+    "href": "notes/statistical_inference.html#additional-resources",
     "title": "Statistical inference",
-    "section": "References",
-    "text": "References\n\nDeductive and Inductive Reasoning Flow Chart [video]\nReasoning with Probabilities [videos]\nIntroduction to Probability [book] [online course] [videos]\nBernoulli’s Fallacy [book]"
+    "section": "Additional resources",
+    "text": "Additional resources\n\nDeductive and Inductive Reasoning Flow Chart [video]\nReasoning with Probabilities [videos]\nIntroduction to Probability [book] [online course] [videos]\nBernoulli’s Fallacy [book]"
   },
   {
     "objectID": "notes/probability_theory.html",
     "href": "notes/probability_theory.html",
     "title": "Probability theory: The logic of science",
     "section": "",
-    "text": "Probability is an essential component of inductive reasoning (i.e., reasoning with probabilities), which plays a key role in scientific reasoning. Unfortunately, humans suck at inductive reasoning; we suffer from “probability blindness” and are often incorrect/illogical/fallacious when reasoning with probabilities.\nProbability theory is the foundation of statistical inference (i.e., learning from data under uncertainty), the cornerstone of modern data analysis."
+    "text": "Probability is an essential component of inductive reasoning (i.e., reasoning with probabilities), which plays a key role in scientific reasoning. Unfortunately, humans suck at inductive reasoning; we suffer from “probability blindness” and are often incorrect/illogical/fallacious when reasoning with probabilities.\nProbability theory is the foundation of statistical inference (i.e., learning from data under uncertainty), the cornerstone of modern data analysis and scientific research."
   },
   {
     "objectID": "notes/probability_theory.html#why-study-probability",
     "href": "notes/probability_theory.html#why-study-probability",
     "title": "Probability theory: The logic of science",
     "section": "",
-    "text": "Probability is an essential component of inductive reasoning (i.e., reasoning with probabilities), which plays a key role in scientific reasoning. Unfortunately, humans suck at inductive reasoning; we suffer from “probability blindness” and are often incorrect/illogical/fallacious when reasoning with probabilities.\nProbability theory is the foundation of statistical inference (i.e., learning from data under uncertainty), the cornerstone of modern data analysis."
+    "text": "Probability is an essential component of inductive reasoning (i.e., reasoning with probabilities), which plays a key role in scientific reasoning. Unfortunately, humans suck at inductive reasoning; we suffer from “probability blindness” and are often incorrect/illogical/fallacious when reasoning with probabilities.\nProbability theory is the foundation of statistical inference (i.e., learning from data under uncertainty), the cornerstone of modern data analysis and scientific research."
   },
   {
-    "objectID": "notes/probability_theory.html#inductive-vs.-deductive-reasoning",
-    "href": "notes/probability_theory.html#inductive-vs.-deductive-reasoning",
+    "objectID": "notes/probability_theory.html#logic-inductive-vs.-deductive-reasoning",
+    "href": "notes/probability_theory.html#logic-inductive-vs.-deductive-reasoning",
     "title": "Probability theory: The logic of science",
-    "section": "Inductive vs. deductive reasoning",
-    "text": "Inductive vs. deductive reasoning\n\nLogic is the study of correct reasoning.\nReasoning is the process of drawing a conclusion from a set of premises.\nReasoning is put into words in the form of an argument.\nAn argument is a set of statements/propositions; more specifically one or more premises and a conclusion.\n\n\\[\n\\begin{align}\n& \\text{premise}_1 \\\\\n& \\text{premise}_2 \\\\\n& \\ldots \\\\\n& \\text{premise}_n \\\\\n& \\overline{\\therefore \\text{conclusion}}\n\\end{align}\n\\]\n\nA statement/proposition is a sentence asserting a claim that is either true or false.\nIn an argument, the premises are the reasons or evidence given in support of the conclusion. The conclusion is the claim that the argument seeks to prove as definitely true (deductive argument) or probably true (inductive argument) assuming that the premises are true.\nPremises and conclusions are either true or false depending on whether they are in accord with reality.\n\n\n\nA valid deductive argument ensures the conclusion is definitely true if the premises are true. The conclusion follows with certainty from the premises, as the premises fully entail the conclusion. If the premises are actually true then a valid deductive argument is also a sound argument.\nA strong inductive argument ensures the conclusion is likely true if the premises are true. The conclusion follows with high probability from the premises, as the premises partially entail the conclusion. If the premises are actually true then a strong inductive argument is also a cogent argument.\nProbability can be understood as the measure of the degree to which a conclusion follows from the premises. It indicates the strength of the entailment between the premises and the conclusion.\nHow likely is the conclusion given the premises? Probability theory can help us find the answer!\nHow likely does the conclusion need to be before it’s rational to accept it? Decision theory (e.g., cost-benefit analysis) can help us find the answer!"
+    "section": "Logic: Inductive vs. deductive reasoning",
+    "text": "Logic: Inductive vs. deductive reasoning\n\nLogic is the study of correct reasoning.\nReasoning is the process of drawing a conclusion from a set of premises.\nReasoning is put into words in the form of an argument.\nAn argument is a set of statements/propositions; more specifically one or more premises and a conclusion.\n\n\\[\n\\begin{align}\n& \\text{premise}_1 \\\\\n& \\text{premise}_2 \\\\\n& \\ldots \\\\\n& \\text{premise}_n \\\\\n& \\overline{\\therefore \\text{conclusion}}\n\\end{align}\n\\]\n\nA statement/proposition is a sentence asserting a claim that is either true or false.\nIn an argument, the premises are the reasons or evidence given in support of the conclusion. The conclusion is the claim that the argument seeks to prove as definitely true (deductive argument) or probably true (inductive argument) assuming that the premises are true.\nPremises and conclusions are either true or false depending on whether they are in accord with reality.\n\n\n\nA valid deductive argument ensures the conclusion is definitely true if the premises are true. The conclusion follows with certainty from the premises, as the premises fully entail the conclusion. If the premises are actually true then a valid deductive argument is also a sound argument.\nA strong inductive argument ensures the conclusion is likely true if the premises are true. The conclusion follows with high probability from the premises, as the premises partially entail the conclusion. If the premises are actually true then a strong inductive argument is also a cogent argument.\nProbability can be understood as the measure of the degree to which a conclusion follows from the premises. It indicates the strength of the entailment between the premises and the conclusion.\nHow likely is the conclusion given the premises? Probability theory can help us find the answer!\nHow likely does the conclusion need to be before it’s rational to accept it? Decision theory (e.g., cost-benefit analysis) can help us find the answer!"
   },
   {
     "objectID": "notes/probability_theory.html#probability-proposition-vs.-event-language",
     "href": "notes/probability_theory.html#probability-proposition-vs.-event-language",
     "title": "Probability theory: The logic of science",
     "section": "Probability: Proposition vs. event language",
-    "text": "Probability: Proposition vs. event language\nTwo ways of asking the same question!\n“What is the probability that the coin will land heads?”\nProposition: “the coin will land heads”\nQuestion: What is the probability that this proposition is true?\nA proposition is a sentence that asserts a claim that is either true or false.\nBetter fit for the logical or bayesian/“subjective” interpretations of probability.\n\n“What is the probability of the coin landing heads?”\nEvent: “the coin landing heads”\nQuestion: What is the probability that this event will occur?\nAn event in not a linguistic entity, it does not assert anything (that is either true or false). An event is a state of affairs in the world that either occurs or doesn’t occur.\nBetter fit for the classical or frequentist/“objective” interpretations of probability."
+    "text": "Probability: Proposition vs. event language\nTwo ways of asking the same question:\n\n“What is the probability that the coin will land heads?”\n\nProposition: “the coin will land heads”\nQuestion: What is the probability that this proposition is true?\nA proposition is a sentence that asserts a claim that is either true or false.\nBetter fit for the logical or bayesian/“subjective” interpretations of probability.\n\n“What is the probability of the coin landing heads?”\n\nEvent: “the coin landing heads”\nQuestion: What is the probability that this event will occur?\nAn event in not a linguistic entity, it does not assert anything (that is either true or false). An event is a state of affairs in the world that either occurs or doesn’t occur.\nBetter fit for the classical or frequentist/“objective” interpretations of probability."
+  },
+  {
+    "objectID": "notes/probability_theory.html#set-theory",
+    "href": "notes/probability_theory.html#set-theory",
+    "title": "Probability theory: The logic of science",
+    "section": "Set theory",
+    "text": "Set theory\nA set is a collection of objects, typically referred to as elements (or members) of the set, e.g.:\n\n\\(\\{-7, 0, 3, 5\\}\\)\nnatural numbers: \\(\\mathbb{N} = \\{1,2,3,\\ldots \\}\\quad \\text{or} \\quad \\{0, 1,2,3,\\ldots \\}\\)\nintegers: \\(\\mathbb{Z} = \\{ \\ldots, -3, -2, -1, 0, 1, 2, 3, \\ldots \\}\\)\nreal numbers: \\(\\mathbb{R}\\)\n\\(\\{ ⚀, ⚁, ⚂, ⚃, ⚄, ⚅ \\}\\)\n\\(\\{ 🐱, 🐶, 🐰, 🐭, 🐻, 🐷, 🐵 \\}\\)\n\\(\\{ 🟥, 🟩, 🟦, 🔴, 🟢, 🔵 \\}\\)"
   },
   {
     "objectID": "notes/probability_theory.html#probability-as-a-mathematical-object",
     "href": "notes/probability_theory.html#probability-as-a-mathematical-object",
     "title": "Probability theory: The logic of science",
     "section": "Probability as a mathematical object",
-    "text": "Probability as a mathematical object\nIn mathematics, a function is an assignment of an element \\(y\\) of a set \\(Y\\) to each element \\(x\\) of a set \\(X\\).\nINPUT: \\(x\\)\nFUNCTION: \\(f\\)\nOUTPUT: \\(y = f(x)\\)\n\\(f: X \\rightarrow Y\\)\nProbability is a function \\(P\\) that assigns a number between 0 and 1 to each subset \\(A\\) of a sample space \\(\\Omega\\) (i.e., the non-empty set of all possible outcomes of a random phenomemon/process/“experiment”, e.g., tossing a coin).\n\\(A\\) is an event/proposition\n\\(P(A)\\) is the probability of \\(A\\) (i.e., a number between 0 and 1)\n\\(A \\subseteq \\Omega\\)\n\\(E\\) is an event space (i.e., the set of all possible subsets of a sample space \\(\\Omega\\))\n\\(A \\in E\\)\nProbability (i.e., the function \\(P: E \\rightarrow [0, 1]\\)) must satisfy a number of axioms (Kolmogorov axioms or Cox’s theorem):\n\n\\(P(A) \\ge 0\\)\n\\(P(\\Omega) = 1\\)\n\\(P\\) is countably additive: if \\(A_1, A_2, \\ldots, A_n\\) are pairwise disjoint events, then \\(P(\\cup_{i=1}^n A_i) = \\sum_{i=1}^n P(A_i)\\).\n\nAll rules of probability are derived from these axioms, for example:\n\\(0 \\le P(A) \\le 1\\)\n\\(P(\\emptyset) = 0\\)\nProbability theory is the study of probability as a mathematical object."
+    "text": "Probability as a mathematical object\nProbability theory is the study of probability as a mathematical object; more specifically, probability is a function that satisfies the axioms of probability.\nIn mathematics, a function is an assignment of an element \\(y\\) of a set \\(Y\\) to each element \\(x\\) of a set \\(X\\).\nFUNCTION: \\(f: X \\rightarrow Y\\)\nINPUT: \\(x\\)\nOUTPUT: \\(y = f(x)\\)\nThe sample space \\(\\Omega\\) is the set of all possible outcomes of a random phenomenon/process/“experiment”, e.g., tossing a coin.\nThe power set of a set \\(S\\) is the set of all subsets of \\(S\\), including the empty set \\(\\emptyset\\) and \\(S\\) itself.\nThe event space \\(F\\) is the power set of the sample space \\(\\Omega\\).\nAn event (or proposition) \\(A\\) is a subset of the sample space \\(\\Omega\\):\n\\(A \\subseteq \\Omega\\)\nand therefore an element of the event space \\(F\\):\n\\(A \\in F\\)\nProbability is a function \\(P\\) that assigns a real number [between 0 and 1] to each event of an event space:\n\\(P : F \\rightarrow \\mathbb{R}\\)\n\\(P(A)\\) is the probability of event (or proposition) \\(A\\), i.e., a real number [between 0 and 1].\nA real number is a number that can be used to measure a continuous one-dimensional quantity such as a distance, duration, temperature, mass, or (in this case) uncertainty."
+  },
+  {
+    "objectID": "notes/probability_theory.html#the-axioms-of-probability",
+    "href": "notes/probability_theory.html#the-axioms-of-probability",
+    "title": "Probability theory: The logic of science",
+    "section": "The axioms of probability",
+    "text": "The axioms of probability\nProbability as a function \\(P : F \\rightarrow \\mathbb{R}\\) must satisfy a number of axioms (Kolmogorov axioms; see also Cox’s theorem as an alternative):\n\n\\(P(A) \\ge 0 \\quad \\forall A \\in F\\)\n\\(P(\\Omega) = 1\\)\n\\(\\text{if} \\quad A_1, A_2, \\ldots, A_n \\ \\text{are disjoint/mutually exclusive events} \\quad \\text{then} \\quad P(\\cup_{i=1}^n A_i) = \\sum_{i=1}^n P(A_i)\\)\n\nAll rules of probability are derived from these axioms, for example:\n\\(0 \\le P(A) \\le 1 \\quad \\forall A \\in F\\)\n\\(P(\\emptyset) = 0\\)\n\\(\\text{if} \\quad A \\subseteq B \\quad \\text{then} \\quad P(A) \\le P(B)\\)"
+  },
+  {
+    "objectID": "notes/probability_theory.html#example-a-single-toin-coss",
+    "href": "notes/probability_theory.html#example-a-single-toin-coss",
+    "title": "Probability theory: The logic of science",
+    "section": "Example: A single toin coss",
+    "text": "Example: A single toin coss\nConsider a single coin toss and assume that the coin will either land heads (\\(H\\)) or tails (\\(T\\)) (but not both):\n\\(\\Omega = \\{H, T\\}\\)\n\\(F = \\{ \\emptyset, \\{H\\}, \\{T\\}, \\{H,T\\} \\}\\)\nIf we assume that the coin is fair (i.e., it has equal probability of landing heads or tails):\n\\(P(\\emptyset) = 0\\)\n\\(P(\\{H,T\\}) = P(\\Omega) = 1\\)\n\\(P(\\{H,T\\}) = P(\\{H\\}) + P(\\{T\\}) = 1\\)\n\\(P(\\{H\\}) = P(\\{T\\}) = 0.5\\)"
   },
   {
     "objectID": "notes/probability_theory.html#mutually-exclusivedisjoint-events",
@@ -112,11 +126,18 @@
     "text": "Inverse probability: Bayes’ theorem (or Bayes’ rule)\n\\(P(A\\ \\text{and} \\ B) = P(A) \\times P(B \\mid A)\\)\n\\(P(B\\ \\text{and} \\ A) = P(B) \\times P(A \\mid B)\\)\n\\(P(A\\ \\text{and}\\ B) = P(B\\ \\text{and}\\ A)\\)\n\\(P(A) \\times P(B \\mid A) = P(B) \\times P(A \\mid B)\\)\n\\(P(A \\mid B) = \\frac{P(A) \\times P(B \\mid A)}{P(B)}\\)"
   },
   {
-    "objectID": "notes/probability_theory.html#references",
-    "href": "notes/probability_theory.html#references",
+    "objectID": "notes/probability_theory.html#additional-resources",
+    "href": "notes/probability_theory.html#additional-resources",
     "title": "Probability theory: The logic of science",
-    "section": "References",
-    "text": "References\n\nDeductive and Inductive Reasoning Flow Chart [video]\nReasoning with Probabilities [videos]\nIntroduction to Probability [book] [online course] [videos]\nBernoulli’s Fallacy [book]"
+    "section": "Additional resources",
+    "text": "Additional resources\n\nDeductive and Inductive Reasoning Flow Chart [video]\nReasoning with Probabilities [videos]\nIntroduction to Probability [book] [online course] [videos]\nBernoulli’s Fallacy [book]"
+  },
+  {
+    "objectID": "exercises/index.html",
+    "href": "exercises/index.html",
+    "title": "Exercises",
+    "section": "",
+    "text": "No matching items"
   },
   {
     "objectID": "lectures/index.html",

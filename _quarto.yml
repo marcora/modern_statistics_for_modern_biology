@@ -7,10 +7,9 @@ website:
     left:
       - index.qmd
       - lectures/index.qmd
-      - labs/index.qmd
+      - exercises/index.qmd
       - notes/index.qmd
       - assignments/index.qmd
-      - resources.qmd
       - about.qmd
 
 format:

@@ -1,4 +1,4 @@
 ---
-title: "Labs"
+title: "Exercises"
 listing: default
 ---
