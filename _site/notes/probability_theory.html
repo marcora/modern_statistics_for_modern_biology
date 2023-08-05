@@ -135,9 +135,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#independent-events" id="toc-independent-events" class="nav-link" data-scroll-target="#independent-events">Independent events</a></li>
   <li><a href="#the-rules-of-probability" id="toc-the-rules-of-probability" class="nav-link" data-scroll-target="#the-rules-of-probability">The rules of probability</a>
   <ul class="collapse">
-  <li><a href="#negation-not" id="toc-negation-not" class="nav-link" data-scroll-target="#negation-not">Negation (NOT)</a></li>
-  <li><a href="#disjunction-or-sumaddition-rule" id="toc-disjunction-or-sumaddition-rule" class="nav-link" data-scroll-target="#disjunction-or-sumaddition-rule">Disjunction (OR, sum/addition rule)</a></li>
-  <li><a href="#conjunction-and-productmultiplication-rule" id="toc-conjunction-and-productmultiplication-rule" class="nav-link" data-scroll-target="#conjunction-and-productmultiplication-rule">Conjunction (AND, product/multiplication rule)</a></li>
+  <li><a href="#negation-not-logical-operator" id="toc-negation-not-logical-operator" class="nav-link" data-scroll-target="#negation-not-logical-operator">Negation (NOT logical operator)</a></li>
+  <li><a href="#disjunction-sumaddition-rule-or-logical-operator" id="toc-disjunction-sumaddition-rule-or-logical-operator" class="nav-link" data-scroll-target="#disjunction-sumaddition-rule-or-logical-operator">Disjunction (sum/addition rule; OR logical operator)</a></li>
+  <li><a href="#conjunction-productmultiplication-rule-and-logical-operator" id="toc-conjunction-productmultiplication-rule-and-logical-operator" class="nav-link" data-scroll-target="#conjunction-productmultiplication-rule-and-logical-operator">Conjunction (product/multiplication rule; AND logical operator)</a></li>
   </ul></li>
   <li><a href="#conditional-probability" id="toc-conditional-probability" class="nav-link" data-scroll-target="#conditional-probability">Conditional probability</a></li>
   <li><a href="#inverse-probability-bayes-theorem-or-bayes-rule" id="toc-inverse-probability-bayes-theorem-or-bayes-rule" class="nav-link" data-scroll-target="#inverse-probability-bayes-theorem-or-bayes-rule">Inverse probability: Bayes’ theorem (or Bayes’ rule)</a></li>
@@ -180,6 +180,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="why-study-probability" class="level2">
 <h2 class="anchored" data-anchor-id="why-study-probability">Why study probability?</h2>
 <ul>
+<li><strong>Probability theory</strong> is the study of probability [as a mathematical object].</li>
 <li><strong>Probability</strong> is an essential component of <strong>inductive reasoning</strong> (i.e., reasoning with probabilities), which plays a key role in <strong>scientific reasoning</strong>. Unfortunately, humans suck at inductive reasoning; we suffer from “probability blindness” and are often incorrect/illogical/fallacious when reasoning with probabilities.</li>
 <li><strong>Probability theory</strong> is the foundation of <strong>statistical inference</strong> (i.e., learning from data under uncertainty), the cornerstone of modern data analysis and scientific research.</li>
 </ul>
@@ -206,7 +207,11 @@ ul.task-list li input[type="checkbox"] {
 <li>In an argument, the premises are the reasons or evidence given in support of the conclusion. The conclusion is the claim that the argument seeks to prove as definitely true (<strong>deductive argument</strong>) or probably true (<strong>inductive argument</strong>) assuming that the premises are true.</li>
 <li>Premises and conclusions are either true or false depending on whether they are in accord with reality.</li>
 </ul>
-<p><img src="../_images/reasoning_flowchart.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://youtu.be/6Sg9zI-GNsI"><img src="../images/reasoning_flowchart.png" class="img-fluid figure-img"></a></p>
+</figure>
+</div>
 <ul>
 <li>A <strong>valid deductive argument</strong> ensures the conclusion is definitely true if the premises are true. The conclusion follows with certainty from the premises, as the premises fully entail the conclusion. If the premises are actually true then a valid deductive argument is also a <strong>sound argument</strong>.</li>
 <li>A <strong>strong inductive argument</strong> ensures the conclusion is likely true if the premises are true. The conclusion follows with high probability from the premises, as the premises partially entail the conclusion. If the premises are actually true then a strong inductive argument is also a <strong>cogent argument</strong>.</li>
@@ -301,8 +306,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="the-rules-of-probability" class="level2">
 <h2 class="anchored" data-anchor-id="the-rules-of-probability">The rules of probability</h2>
-<section id="negation-not" class="level3">
-<h3 class="anchored" data-anchor-id="negation-not">Negation (NOT)</h3>
+<section id="negation-not-logical-operator" class="level3">
+<h3 class="anchored" data-anchor-id="negation-not-logical-operator">Negation (NOT logical operator)</h3>
 <p><span class="math inline">\(P(\text{not-}A) = 1 - P(A)\)</span></p>
 <p>Alternative notation for <span class="math inline">\(P(\text{not-}A)\)</span>:</p>
 <ul>
@@ -312,8 +317,8 @@ ul.task-list li input[type="checkbox"] {
 <li><span class="math inline">\(P(\lnot A)\)</span></li>
 </ul>
 </section>
-<section id="disjunction-or-sumaddition-rule" class="level3">
-<h3 class="anchored" data-anchor-id="disjunction-or-sumaddition-rule">Disjunction (OR, sum/addition rule)</h3>
+<section id="disjunction-sumaddition-rule-or-logical-operator" class="level3">
+<h3 class="anchored" data-anchor-id="disjunction-sumaddition-rule-or-logical-operator">Disjunction (sum/addition rule; OR logical operator)</h3>
 <p><span class="math inline">\(P(A\ \text{or}\ B) = P(A) + P(B) - P(A\ \text{and}\ B)\)</span></p>
 <p>Alternative notation for <span class="math inline">\(P(A\ \text{or}\ B)\)</span>:</p>
 <ul>
@@ -322,8 +327,8 @@ ul.task-list li input[type="checkbox"] {
 <p>If <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are mutually exclusive/disjoint events: <span class="math inline">\(P(A \cup B) = P(A) + P(B)\)</span></p>
 <p>The disjunction rule is commutative: <span class="math inline">\(P(A \cup B) = P(B \cup A)\)</span></p>
 </section>
-<section id="conjunction-and-productmultiplication-rule" class="level3">
-<h3 class="anchored" data-anchor-id="conjunction-and-productmultiplication-rule">Conjunction (AND, product/multiplication rule)</h3>
+<section id="conjunction-productmultiplication-rule-and-logical-operator" class="level3">
+<h3 class="anchored" data-anchor-id="conjunction-productmultiplication-rule-and-logical-operator">Conjunction (product/multiplication rule; AND logical operator)</h3>
 <p><span class="math inline">\(P(A\ \text{and} \ B) = P(A) \times P(B \mid A)\)</span></p>
 <p>Alternative notation for <span class="math inline">\(P(A\ \text{and} \ B)\)</span>:</p>
 <ul>

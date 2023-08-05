@@ -4,7 +4,7 @@ author: "Edoardo Marcora"
 date: 2023-08-03
 ---
 
-[![](/_images/xkcd_frequentists_vs_bayesians.png){width="60%"}](https://xkcd.com/1132/)
+[![](/images/xkcd_frequentists_vs_bayesians.png){width="60%"}](https://xkcd.com/1132/)
 
 ## Interpretations of probability
 
