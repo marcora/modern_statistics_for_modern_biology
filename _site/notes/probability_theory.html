@@ -126,6 +126,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#why-study-probability" id="toc-why-study-probability" class="nav-link active" data-scroll-target="#why-study-probability">Why study probability?</a></li>
   <li><a href="#logic-inductive-vs.-deductive-reasoning" id="toc-logic-inductive-vs.-deductive-reasoning" class="nav-link" data-scroll-target="#logic-inductive-vs.-deductive-reasoning">Logic: Inductive vs.&nbsp;deductive reasoning</a></li>
+  <li><a href="#logical-operators-and-truth-tables" id="toc-logical-operators-and-truth-tables" class="nav-link" data-scroll-target="#logical-operators-and-truth-tables">Logical operators and truth tables</a></li>
   <li><a href="#probability-proposition-vs.-event-language" id="toc-probability-proposition-vs.-event-language" class="nav-link" data-scroll-target="#probability-proposition-vs.-event-language">Probability: Proposition vs.&nbsp;event language</a></li>
   <li><a href="#set-theory" id="toc-set-theory" class="nav-link" data-scroll-target="#set-theory">Set theory</a></li>
   <li><a href="#probability-as-a-mathematical-object" id="toc-probability-as-a-mathematical-object" class="nav-link" data-scroll-target="#probability-as-a-mathematical-object">Probability as a mathematical object</a></li>
@@ -135,9 +136,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#independent-events" id="toc-independent-events" class="nav-link" data-scroll-target="#independent-events">Independent events</a></li>
   <li><a href="#the-rules-of-probability" id="toc-the-rules-of-probability" class="nav-link" data-scroll-target="#the-rules-of-probability">The rules of probability</a>
   <ul class="collapse">
-  <li><a href="#negation-not-logical-operator" id="toc-negation-not-logical-operator" class="nav-link" data-scroll-target="#negation-not-logical-operator">Negation (NOT logical operator)</a></li>
-  <li><a href="#disjunction-sumaddition-rule-or-logical-operator" id="toc-disjunction-sumaddition-rule-or-logical-operator" class="nav-link" data-scroll-target="#disjunction-sumaddition-rule-or-logical-operator">Disjunction (sum/addition rule; OR logical operator)</a></li>
-  <li><a href="#conjunction-productmultiplication-rule-and-logical-operator" id="toc-conjunction-productmultiplication-rule-and-logical-operator" class="nav-link" data-scroll-target="#conjunction-productmultiplication-rule-and-logical-operator">Conjunction (product/multiplication rule; AND logical operator)</a></li>
+  <li><a href="#negation" id="toc-negation" class="nav-link" data-scroll-target="#negation">Negation</a></li>
+  <li><a href="#disjunction-sumaddition-rule" id="toc-disjunction-sumaddition-rule" class="nav-link" data-scroll-target="#disjunction-sumaddition-rule">Disjunction (sum/addition rule)</a></li>
+  <li><a href="#conjunction-productmultiplication-rule" id="toc-conjunction-productmultiplication-rule" class="nav-link" data-scroll-target="#conjunction-productmultiplication-rule">Conjunction (product/multiplication rule)</a></li>
   </ul></li>
   <li><a href="#conditional-probability" id="toc-conditional-probability" class="nav-link" data-scroll-target="#conditional-probability">Conditional probability</a></li>
   <li><a href="#inverse-probability-bayes-theorem-or-bayes-rule" id="toc-inverse-probability-bayes-theorem-or-bayes-rule" class="nav-link" data-scroll-target="#inverse-probability-bayes-theorem-or-bayes-rule">Inverse probability: Bayes’ theorem (or Bayes’ rule)</a></li>
@@ -180,18 +181,20 @@ ul.task-list li input[type="checkbox"] {
 <section id="why-study-probability" class="level2">
 <h2 class="anchored" data-anchor-id="why-study-probability">Why study probability?</h2>
 <ul>
-<li><strong>Probability theory</strong> is the study of probability [as a mathematical object].</li>
-<li><strong>Probability</strong> is an essential component of <strong>inductive reasoning</strong> (i.e., reasoning with probabilities), which plays a key role in <strong>scientific reasoning</strong>. Unfortunately, humans suck at inductive reasoning; we suffer from “probability blindness” and are often incorrect/illogical/fallacious when reasoning with probabilities.</li>
-<li><strong>Probability theory</strong> is the foundation of <strong>statistical inference</strong> (i.e., learning from data under uncertainty), the cornerstone of modern data analysis and scientific research.</li>
+<li><strong>Probability</strong> is the basis for <strong>inductive reasoning</strong> (i.e., reasoning with probabilities).</li>
+<li><strong>Scientific reasoning</strong> is inductive reasoning (e.g., generalization, prediction, causal inference, etc.).</li>
+<li>Unfortunately, humans suffer from “probability blindness” and are often incorrect when reasoning with probabilities.</li>
+<li><strong>Probability theory</strong> is the study of probability as a mathematical object.</li>
+<li>Probability theory is the foundation of <strong>statistical inference</strong> (i.e., learning from data under uncertainty), a cornerstone of modern data analysis and scientific research.</li>
 </ul>
 </section>
 <section id="logic-inductive-vs.-deductive-reasoning" class="level2">
 <h2 class="anchored" data-anchor-id="logic-inductive-vs.-deductive-reasoning">Logic: Inductive vs.&nbsp;deductive reasoning</h2>
 <ul>
 <li><strong>Logic</strong> is the study of <strong>correct reasoning</strong>.</li>
-<li>Reasoning is the process of drawing a conclusion from a set of premises.</li>
+<li>Reasoning is the process of drawing a conclusion from one or more premises.</li>
 <li>Reasoning is put into words in the form of an argument.</li>
-<li>An <strong>argument</strong> is a set of statements/propositions; more specifically <strong>one or more premises and a conclusion</strong>.</li>
+<li>An <strong>argument</strong> is a set of statements; more specifically <strong>one or more premises and a conclusion</strong>.</li>
 </ul>
 <p><span class="math display">\[
 \begin{align}
@@ -203,9 +206,8 @@ ul.task-list li input[type="checkbox"] {
 \end{align}
 \]</span></p>
 <ul>
-<li>A <strong>statement/proposition</strong> is a sentence asserting a claim that is either true or false.</li>
-<li>In an argument, the premises are the reasons or evidence given in support of the conclusion. The conclusion is the claim that the argument seeks to prove as definitely true (<strong>deductive argument</strong>) or probably true (<strong>inductive argument</strong>) assuming that the premises are true.</li>
-<li>Premises and conclusions are either true or false depending on whether they are in accord with reality.</li>
+<li>A statement is a sentence that asserts a proposition/claim that is either true or false based on its correspondence with reality/the state of affairs in the world.</li>
+<li>In an argument, the premises are the evidence given in support of the conclusion. The conclusion is the statement/proposition that the argument seeks to prove as definitely true (<strong>deductive argument</strong>) or likely true (<strong>inductive argument</strong>) if the premises are true.</li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -213,11 +215,25 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <ul>
-<li>A <strong>valid deductive argument</strong> ensures the conclusion is definitely true if the premises are true. The conclusion follows with certainty from the premises, as the premises fully entail the conclusion. If the premises are actually true then a valid deductive argument is also a <strong>sound argument</strong>.</li>
-<li>A <strong>strong inductive argument</strong> ensures the conclusion is likely true if the premises are true. The conclusion follows with high probability from the premises, as the premises partially entail the conclusion. If the premises are actually true then a strong inductive argument is also a <strong>cogent argument</strong>.</li>
-<li>Probability can be understood as the measure of the degree to which a conclusion follows from the premises. It indicates the strength of the entailment between the premises and the conclusion.</li>
+<li>A <strong>valid deductive argument</strong> guarantees a definitely true conclusion if the premises are true, i.e., in valid deductive argument the premises fully entail the conclusion. When the premises are true and the deductive argument is valid, it is also <strong>sound</strong>.</li>
+<li>A <strong>strong inductive argument</strong> guarantees a likely true conclusion if the premises are true, i.e., in a strong inductive argument the premises partially entail the conclusion. When the premises are true and the inductive argument is strong, it is also <strong>cogent</strong>.</li>
 <li>How likely is the conclusion given the premises? Probability theory can help us find the answer!</li>
 <li>How likely does the conclusion need to be before it’s rational to accept it? Decision theory (e.g., cost-benefit analysis) can help us find the answer!</li>
+</ul>
+</section>
+<section id="logical-operators-and-truth-tables" class="level2">
+<h2 class="anchored" data-anchor-id="logical-operators-and-truth-tables">Logical operators and truth tables</h2>
+<ul>
+<li>Statements/propositions can be combined using logical operators:
+<ul>
+<li>AND</li>
+<li>OR</li>
+<li>NOT</li>
+</ul></li>
+<li>Truth tables:
+<ul>
+<li>XXX</li>
+</ul></li>
 </ul>
 </section>
 <section id="probability-proposition-vs.-event-language" class="level2">
@@ -228,49 +244,65 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li><strong>Proposition</strong>: <em>“the coin will land heads”</em></li>
 <li><strong>Question</strong>: What is the probability that this <strong>proposition</strong> is <strong>true</strong>?</li>
-<li>A proposition is a sentence that asserts a claim that is either true or false.</li>
+<li>A proposition is a claim that is either true or false based on its correspondence with reality/the state of affairs in the world.</li>
 <li>Better fit for the logical or bayesian/“subjective” interpretations of probability.</li>
 </ul></li>
 <li><em>“What is the probability of the coin landing heads?”</em>
 <ul>
 <li><strong>Event</strong>: <em>“the coin landing heads”</em></li>
 <li><strong>Question</strong>: What is the probability that this <strong>event</strong> will <strong>occur</strong>?</li>
-<li>An event in not a linguistic entity, it does not assert anything (that is either true or false). An event is a state of affairs in the world that either occurs or doesn’t occur.</li>
+<li>An event is a state of affairs in the world that either occurs or doesn’t occur.</li>
 <li>Better fit for the classical or frequentist/“objective” interpretations of probability.</li>
 </ul></li>
 </ol>
 </section>
 <section id="set-theory" class="level2">
 <h2 class="anchored" data-anchor-id="set-theory">Set theory</h2>
-<p>A <strong>set</strong> is a collection of objects, typically referred to as <strong>elements</strong> (or members) of the set, e.g.:</p>
 <ul>
-<li><span class="math inline">\(\{-7, 0, 3, 5\}\)</span></li>
+<li>A <strong>set</strong> is a collection of objects, typically referred to as <strong>elements</strong> (or members) of the set.</li>
+<li>The objects within a set can be anything—numbers, letters, people, animals, sets, or any other entities—as long as they are well-defined and distinct, e.g.:
+<ul>
+<li><span class="math inline">\(\{1, 3, 5, 7\}\)</span></li>
 <li><strong>natural numbers</strong>: <span class="math inline">\(\mathbb{N} = \{1,2,3,\ldots \}\quad \text{or} \quad \{0, 1,2,3,\ldots \}\)</span></li>
 <li><strong>integers</strong>: <span class="math inline">\(\mathbb{Z} = \{ \ldots, -3, -2, -1, 0, 1, 2, 3, \ldots \}\)</span></li>
 <li><strong>real numbers</strong>: <span class="math inline">\(\mathbb{R}\)</span></li>
+<li><span class="math inline">\(\{ a, b, c, d \}\)</span></li>
+<li><span class="math inline">\(\{ \{1, 3, 5, 7 \} , \{ a, b, c, d \} \}\)</span></li>
 <li><span class="math inline">\(\{ ⚀, ⚁, ⚂, ⚃, ⚄, ⚅ \}\)</span></li>
-<li><span class="math inline">\(\{ 🐱, 🐶, 🐰, 🐭, 🐻, 🐷, 🐵 \}\)</span></li>
+<li><span class="math inline">\(\{ ⚀⚀, ⚀⚁, ⚀⚂, ⚀⚃, ⚀⚄, ⚀⚅, ⚁⚀, ⚁⚁, ⚁⚂, ⚁⚃, ⚁⚄, ⚁⚅, ⚂⚀, ⚂⚁, ⚂⚂, ⚂⚃, ⚂⚄, ⚂⚅, ⚃⚀, ⚃⚁, ⚃⚂, ⚃⚃, ⚃⚄, ⚃⚅, ⚄⚀, ⚄⚁, ⚄⚂, ⚄⚃, ⚄⚄, ⚄⚅, ⚅⚀, ⚅⚁, ⚅⚂, ⚅⚃, ⚅⚄, ⚅⚅ \}\)</span></li>
+<li><span class="math inline">\(\{ 🐱, 🐶, 🐰, 🐭, 🐻, 🐷, 🐴, 🐤, 🐵, 🐟, 🦖, 🐸, 🦑, 🦀, 🐞, 👽, 🎅 \}\)</span></li>
 <li><span class="math inline">\(\{ 🟥, 🟩, 🟦, 🔴, 🟢, 🔵 \}\)</span></li>
+</ul></li>
+<li>Sets can be combined using set operators:
+<ul>
+<li><span class="math inline">\(A = \{ x : x \in A \}\)</span></li>
+<li><span class="math inline">\(B = \{ x : x \in B \}\)</span></li>
+<li>Union: <span class="math inline">\(A \cup B = \{ x : x \in A \lor x \in B \}\)</span></li>
+<li>Intersection: <span class="math inline">\(A \cap B = \{ x : x \in A \land x \in B \}\)</span></li>
+<li>Complement: <span class="math inline">\(A^\complement = \{ x : x \notin A \}\)</span></li>
+</ul></li>
 </ul>
 </section>
 <section id="probability-as-a-mathematical-object" class="level2">
 <h2 class="anchored" data-anchor-id="probability-as-a-mathematical-object">Probability as a mathematical object</h2>
-<p>Probability theory is the study of probability as a mathematical object; more specifically, probability is a function that satisfies the axioms of probability.</p>
+<p>Probability theory is the study of probability as a mathematical object.</p>
+<p>Probability as a function that satisfies the axioms of probability.</p>
 <p>In mathematics, a function is an assignment of an element <span class="math inline">\(y\)</span> of a set <span class="math inline">\(Y\)</span> to each element <span class="math inline">\(x\)</span> of a set <span class="math inline">\(X\)</span>.</p>
 <p>FUNCTION: <span class="math inline">\(f: X \rightarrow Y\)</span></p>
 <p>INPUT: <span class="math inline">\(x\)</span></p>
 <p>OUTPUT: <span class="math inline">\(y = f(x)\)</span></p>
-<p>The <strong>sample space</strong> <span class="math inline">\(\Omega\)</span> is the set of all possible outcomes of a random phenomenon/process/“experiment”, e.g., tossing a coin.</p>
+<p>The <strong>sample space</strong> <span class="math inline">\(\Omega\)</span> is the set of all possible outcomes of a random phenomenon/stochastic process/“experiment”, e.g., tossing a coin.</p>
 <p>The power set of a set <span class="math inline">\(S\)</span> is the set of all subsets of <span class="math inline">\(S\)</span>, including the empty set <span class="math inline">\(\emptyset\)</span> and <span class="math inline">\(S\)</span> itself.</p>
 <p>The <strong>event space</strong> <span class="math inline">\(F\)</span> is the power set of the sample space <span class="math inline">\(\Omega\)</span>.</p>
-<p>An <strong>event</strong> (or proposition) <span class="math inline">\(A\)</span> is a subset of the sample space <span class="math inline">\(\Omega\)</span>:</p>
+<p>An <strong>event</strong> <span class="math inline">\(A\)</span> is a subset of the sample space <span class="math inline">\(\Omega\)</span>:</p>
 <p><span class="math inline">\(A \subseteq \Omega\)</span></p>
 <p>and therefore an element of the event space <span class="math inline">\(F\)</span>:</p>
 <p><span class="math inline">\(A \in F\)</span></p>
-<p><strong>Probability</strong> is a function <span class="math inline">\(P\)</span> that assigns a real number [between 0 and 1] to each event of an event space:</p>
+<p><strong>Probability</strong> is a function <span class="math inline">\(P\)</span> from the event space <span class="math inline">\(F\)</span> to the real numbers <span class="math inline">\(\mathbb{R}\)</span>:</p>
 <p><span class="math inline">\(P : F \rightarrow \mathbb{R}\)</span></p>
-<p><span class="math inline">\(P(A)\)</span> is the probability of event (or proposition) <span class="math inline">\(A\)</span>, i.e., a real number [between 0 and 1].</p>
-<p>A real number is a number that can be used to measure a continuous one-dimensional quantity such as a distance, duration, temperature, mass, or (in this case) uncertainty.</p>
+<p><span class="math inline">\(P(A)\)</span> is the probability of event (or proposition) <span class="math inline">\(A\)</span>, i.e., a real number.</p>
+<p>A real number is a number that can be used to measure a continuous one-dimensional quantity such as a distance, duration, temperature.</p>
+<p><span class="math inline">\(P(A)\)</span> is a measure of uncertainty, i.e., the likelihood that event <span class="math inline">\(A\)</span> will occur or that proposition <span class="math inline">\(A\)</span> is true.</p>
 </section>
 <section id="the-axioms-of-probability" class="level2">
 <h2 class="anchored" data-anchor-id="the-axioms-of-probability">The axioms of probability</h2>
@@ -306,8 +338,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="the-rules-of-probability" class="level2">
 <h2 class="anchored" data-anchor-id="the-rules-of-probability">The rules of probability</h2>
-<section id="negation-not-logical-operator" class="level3">
-<h3 class="anchored" data-anchor-id="negation-not-logical-operator">Negation (NOT logical operator)</h3>
+<section id="negation" class="level3">
+<h3 class="anchored" data-anchor-id="negation">Negation</h3>
 <p><span class="math inline">\(P(\text{not-}A) = 1 - P(A)\)</span></p>
 <p>Alternative notation for <span class="math inline">\(P(\text{not-}A)\)</span>:</p>
 <ul>
@@ -317,8 +349,8 @@ ul.task-list li input[type="checkbox"] {
 <li><span class="math inline">\(P(\lnot A)\)</span></li>
 </ul>
 </section>
-<section id="disjunction-sumaddition-rule-or-logical-operator" class="level3">
-<h3 class="anchored" data-anchor-id="disjunction-sumaddition-rule-or-logical-operator">Disjunction (sum/addition rule; OR logical operator)</h3>
+<section id="disjunction-sumaddition-rule" class="level3">
+<h3 class="anchored" data-anchor-id="disjunction-sumaddition-rule">Disjunction (sum/addition rule)</h3>
 <p><span class="math inline">\(P(A\ \text{or}\ B) = P(A) + P(B) - P(A\ \text{and}\ B)\)</span></p>
 <p>Alternative notation for <span class="math inline">\(P(A\ \text{or}\ B)\)</span>:</p>
 <ul>
@@ -327,8 +359,8 @@ ul.task-list li input[type="checkbox"] {
 <p>If <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are mutually exclusive/disjoint events: <span class="math inline">\(P(A \cup B) = P(A) + P(B)\)</span></p>
 <p>The disjunction rule is commutative: <span class="math inline">\(P(A \cup B) = P(B \cup A)\)</span></p>
 </section>
-<section id="conjunction-productmultiplication-rule-and-logical-operator" class="level3">
-<h3 class="anchored" data-anchor-id="conjunction-productmultiplication-rule-and-logical-operator">Conjunction (product/multiplication rule; AND logical operator)</h3>
+<section id="conjunction-productmultiplication-rule" class="level3">
+<h3 class="anchored" data-anchor-id="conjunction-productmultiplication-rule">Conjunction (product/multiplication rule)</h3>
 <p><span class="math inline">\(P(A\ \text{and} \ B) = P(A) \times P(B \mid A)\)</span></p>
 <p>Alternative notation for <span class="math inline">\(P(A\ \text{and} \ B)\)</span>:</p>
 <ul>
@@ -356,10 +388,11 @@ ul.task-list li input[type="checkbox"] {
 <section id="additional-resources" class="level2">
 <h2 class="anchored" data-anchor-id="additional-resources">Additional resources</h2>
 <ul>
-<li>Deductive and Inductive Reasoning Flow Chart [<a href="https://youtu.be/6Sg9zI-GNsI">video</a>]</li>
-<li>Reasoning with Probabilities [<a href="https://youtube.com/playlist?list=PL1D85E19690485A3E">videos</a>]</li>
-<li>Introduction to Probability [<a href="http://athenasc.com/probbook.html">book</a>] [<a href="https://www.edx.org/course/probability-the-science-of-uncertainty-and-data-0">online course</a>] [<a href="https://youtube.com/playlist?list=PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6">videos</a>]</li>
-<li>Bernoulli’s Fallacy [<a href="http://cup.columbia.edu/book/bernoullis-fallacy/9780231199957">book</a>]</li>
+<li>Deductive and inductive reasoning flow chart [<a href="https://youtu.be/6Sg9zI-GNsI">video</a>]</li>
+<li>Basic concepts in logic and argumentation [<a href="https://youtube.com/playlist?list=PLB8A5292FC68E2D77">videos</a>]</li>
+<li>Reasoning with probabilities [<a href="https://youtube.com/playlist?list=PL1D85E19690485A3E">videos</a>]</li>
+<li>Introduction to probability [<a href="http://athenasc.com/probbook.html">book</a>] [<a href="https://www.edx.org/course/probability-the-science-of-uncertainty-and-data-0">online course</a>] [<a href="https://youtube.com/playlist?list=PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6">videos</a>]</li>
+<li>Bernoulli’s fallacy [<a href="http://cup.columbia.edu/book/bernoullis-fallacy/9780231199957">book</a>]</li>
 </ul>
 
 

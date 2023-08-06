@@ -52,7 +52,8 @@ $P(H \mid D) = \frac{P(H) \times P(D \mid H)}{P(H) \times P(D \mid H) + P(\lnot 
 
 ## Additional resources
 
--   Deductive and Inductive Reasoning Flow Chart \[[video](https://youtu.be/6Sg9zI-GNsI)\]
--   Reasoning with Probabilities \[[videos](https://youtube.com/playlist?list=PL1D85E19690485A3E)\]
--   Introduction to Probability \[[book](http://athenasc.com/probbook.html)\] \[[online course](https://www.edx.org/course/probability-the-science-of-uncertainty-and-data-0)\] \[[videos](https://youtube.com/playlist?list=PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6)\]
--   Bernoulli's Fallacy \[[book](http://cup.columbia.edu/book/bernoullis-fallacy/9780231199957)\]
+-   Deductive and inductive reasoning flow chart \[[video](https://youtu.be/6Sg9zI-GNsI)\]
+-   Basic concepts in logic and argumentation \[[videos](https://youtube.com/playlist?list=PLB8A5292FC68E2D77)\]
+-   Reasoning with probabilities \[[videos](https://youtube.com/playlist?list=PL1D85E19690485A3E)\]
+-   Introduction to probability \[[book](http://athenasc.com/probbook.html)\] \[[online course](https://www.edx.org/course/probability-the-science-of-uncertainty-and-data-0)\] \[[videos](https://youtube.com/playlist?list=PLUl4u3cNGP60hI9ATjSFgLZpbNJ7myAg6)\]
+-   Bernoulli's fallacy \[[book](http://cup.columbia.edu/book/bernoullis-fallacy/9780231199957)\]
