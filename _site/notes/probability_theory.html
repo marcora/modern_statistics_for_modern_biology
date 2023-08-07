@@ -182,7 +182,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="why-study-probability">Why study probability?</h2>
 <ul>
 <li><strong>Probability</strong> is the basis for <strong>inductive reasoning</strong> (i.e., reasoning with probabilities).</li>
-<li><strong>Scientific reasoning</strong> is inductive reasoning (e.g., generalization, prediction, causal inference, etc.).</li>
+<li><strong>Scientific reasoning</strong> is inductive reasoning.</li>
 <li>Unfortunately, humans suffer from “probability blindness” and are often incorrect when reasoning with probabilities.</li>
 <li><strong>Probability theory</strong> is the study of probability as a mathematical object.</li>
 <li>Probability theory is the foundation of <strong>statistical inference</strong> (i.e., learning from data under uncertainty), a cornerstone of modern data analysis and scientific research.</li>
@@ -192,9 +192,9 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="logic-inductive-vs.-deductive-reasoning">Logic: Inductive vs.&nbsp;deductive reasoning</h2>
 <ul>
 <li><strong>Logic</strong> is the study of <strong>correct reasoning</strong>.</li>
-<li>Reasoning is the process of drawing a conclusion from one or more premises.</li>
+<li>Reasoning is the process of drawing a conclusion from a set of premises.</li>
 <li>Reasoning is put into words in the form of an argument.</li>
-<li>An <strong>argument</strong> is a set of statements; more specifically <strong>one or more premises and a conclusion</strong>.</li>
+<li>An <strong>argument</strong> is a set of statements; more specifically <strong>a set of premises and a conclusion</strong>.</li>
 </ul>
 <p><span class="math display">\[
 \begin{align}
@@ -204,6 +204,9 @@ ul.task-list li input[type="checkbox"] {
 &amp; \text{premise}_n \\
 &amp; \overline{\therefore \text{conclusion}}
 \end{align}
+\]</span></p>
+<p><span class="math display">\[
+\text{IF premise}_1\ \text{AND premise}_2 \ldots \ \text{AND premise}_n \ \text{THEN conclusion}
 \]</span></p>
 <ul>
 <li>A statement is a sentence that asserts a proposition/claim that is either true or false based on its correspondence with reality/the state of affairs in the world.</li>
@@ -269,7 +272,7 @@ ul.task-list li input[type="checkbox"] {
 <li><span class="math inline">\(\{ a, b, c, d \}\)</span></li>
 <li><span class="math inline">\(\{ \{1, 3, 5, 7 \} , \{ a, b, c, d \} \}\)</span></li>
 <li><span class="math inline">\(\{ ⚀, ⚁, ⚂, ⚃, ⚄, ⚅ \}\)</span></li>
-<li><span class="math inline">\(\{ ⚀⚀, ⚀⚁, ⚀⚂, ⚀⚃, ⚀⚄, ⚀⚅, ⚁⚀, ⚁⚁, ⚁⚂, ⚁⚃, ⚁⚄, ⚁⚅, ⚂⚀, ⚂⚁, ⚂⚂, ⚂⚃, ⚂⚄, ⚂⚅, ⚃⚀, ⚃⚁, ⚃⚂, ⚃⚃, ⚃⚄, ⚃⚅, ⚄⚀, ⚄⚁, ⚄⚂, ⚄⚃, ⚄⚄, ⚄⚅, ⚅⚀, ⚅⚁, ⚅⚂, ⚅⚃, ⚅⚄, ⚅⚅ \}\)</span></li>
+<li><span class="math inline">\(\{ ⚀⚀, ⚀⚁, ⚀⚂, ⚀⚃, ⚀⚄, ⚀⚅, ⚁⚀, ⚁⚁, ⚁⚂, ⚁⚃, ⚁⚄, ⚁⚅, ⚂⚀, ⚂⚁, ⚂⚂, ⚂⚃, ⚂⚄, ⚂⚅, \\ ⚃⚀, ⚃⚁, ⚃⚂, ⚃⚃, ⚃⚄, ⚃⚅, ⚄⚀, ⚄⚁, ⚄⚂, ⚄⚃, ⚄⚄, ⚄⚅, ⚅⚀, ⚅⚁, ⚅⚂, ⚅⚃, ⚅⚄, ⚅⚅ \}\)</span></li>
 <li><span class="math inline">\(\{ 🐱, 🐶, 🐰, 🐭, 🐻, 🐷, 🐴, 🐤, 🐵, 🐟, 🦖, 🐸, 🦑, 🦀, 🐞, 👽, 🎅 \}\)</span></li>
 <li><span class="math inline">\(\{ 🟥, 🟩, 🟦, 🔴, 🟢, 🔵 \}\)</span></li>
 </ul></li>
@@ -291,22 +294,23 @@ ul.task-list li input[type="checkbox"] {
 <p>FUNCTION: <span class="math inline">\(f: X \rightarrow Y\)</span></p>
 <p>INPUT: <span class="math inline">\(x\)</span></p>
 <p>OUTPUT: <span class="math inline">\(y = f(x)\)</span></p>
-<p>The <strong>sample space</strong> <span class="math inline">\(\Omega\)</span> is the set of all possible outcomes of a random phenomenon/stochastic process/“experiment”, e.g., tossing a coin.</p>
+<p>A probability model consists of three components: the sample space <span class="math inline">\(\Omega\)</span>, the event space <span class="math inline">\(F\)</span> and the probability measure/distribution <span class="math inline">\(P\)</span>.</p>
+<p>The <strong>sample space</strong> <span class="math inline">\(\Omega\)</span> is the set of all possible outcomes of the random phenomenon/stochastic process being modeled.</p>
 <p>The power set of a set <span class="math inline">\(S\)</span> is the set of all subsets of <span class="math inline">\(S\)</span>, including the empty set <span class="math inline">\(\emptyset\)</span> and <span class="math inline">\(S\)</span> itself.</p>
 <p>The <strong>event space</strong> <span class="math inline">\(F\)</span> is the power set of the sample space <span class="math inline">\(\Omega\)</span>.</p>
 <p>An <strong>event</strong> <span class="math inline">\(A\)</span> is a subset of the sample space <span class="math inline">\(\Omega\)</span>:</p>
 <p><span class="math inline">\(A \subseteq \Omega\)</span></p>
-<p>and therefore an element of the event space <span class="math inline">\(F\)</span>:</p>
+<p>and therefore also an element of the event space <span class="math inline">\(F\)</span>:</p>
 <p><span class="math inline">\(A \in F\)</span></p>
-<p><strong>Probability</strong> is a function <span class="math inline">\(P\)</span> from the event space <span class="math inline">\(F\)</span> to the real numbers <span class="math inline">\(\mathbb{R}\)</span>:</p>
+<p>The probability measure/distribution <span class="math inline">\(P\)</span> is a function from the event space <span class="math inline">\(F\)</span> to the real numbers <span class="math inline">\(\mathbb{R}\)</span>:</p>
 <p><span class="math inline">\(P : F \rightarrow \mathbb{R}\)</span></p>
 <p><span class="math inline">\(P(A)\)</span> is the probability of event (or proposition) <span class="math inline">\(A\)</span>, i.e., a real number.</p>
-<p>A real number is a number that can be used to measure a continuous one-dimensional quantity such as a distance, duration, temperature.</p>
+<p>A real number is a number that can be used to measure a continuous one-dimensional quantity such as a length, area, volume, weight and temperature.</p>
 <p><span class="math inline">\(P(A)\)</span> is a measure of uncertainty, i.e., the likelihood that event <span class="math inline">\(A\)</span> will occur or that proposition <span class="math inline">\(A\)</span> is true.</p>
 </section>
 <section id="the-axioms-of-probability" class="level2">
 <h2 class="anchored" data-anchor-id="the-axioms-of-probability">The axioms of probability</h2>
-<p>Probability as a function <span class="math inline">\(P : F \rightarrow \mathbb{R}\)</span> must satisfy a number of axioms (Kolmogorov axioms; see also <a href="https://en.wikipedia.org/wiki/Cox%27s_theorem">Cox’s theorem</a> as an alternative):</p>
+<p>Probability as a function <span class="math inline">\(P : F \rightarrow \mathbb{R}\)</span> must satisfy a number of axioms (Kolmogorov axioms; see also <a href="https://en.wikipedia.org/wiki/Cox%27s_theorem">Cox’s theorem</a> for an alternative formulation):</p>
 <ul>
 <li><span class="math inline">\(P(A) \ge 0 \quad \forall A \in F\)</span></li>
 <li><span class="math inline">\(P(\Omega) = 1\)</span></li>
