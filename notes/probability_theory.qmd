@@ -17,7 +17,7 @@ date: 2023-08-02
 -   **Logic** is the study of **correct reasoning**.
 -   Reasoning is the process of drawing a conclusion from a set of premises.
 -   Reasoning is put into words in the form of an argument.
--   An **argument** is a set of statements; more specifically **a set of premises and a conclusion**.
+-   An **argument** is a set of statements/propositions; more specifically **a set of premises and a conclusion**.
 
 $$
 \begin{align}
@@ -33,7 +33,7 @@ $$
 \text{IF premise}_1\ \text{AND premise}_2 \ldots \ \text{AND premise}_n \ \text{THEN conclusion}
 $$
 
--   A statement is a sentence that asserts a proposition/claim that is either true or false based on its correspondence with reality/the state of affairs in the world.
+-   A statement/proposition is a sentence that asserts a claim that is either true or false based on its correspondence with reality/the state of affairs in the world.
 -   In an argument, the premises are the evidence given in support of the conclusion. The conclusion is the statement/proposition that the argument seeks to prove as definitely true (**deductive argument**) or likely true (**inductive argument**) if the premises are true.
 
 [![](/images/reasoning_flowchart.png)](https://youtu.be/6Sg9zI-GNsI)
