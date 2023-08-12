@@ -184,8 +184,8 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Probability</strong> is the basis for <strong>inductive reasoning</strong> (i.e., reasoning with probabilities).</li>
 <li><strong>Scientific reasoning</strong> is inductive. With a few exceptions (e.g., mathematics and computer programming) nearly all reasoning is inductive.</li>
 <li>Unfortunately, humans suffer from “probability blindness” and are often incorrect when reasoning with probabilities.</li>
-<li><strong>Probability theory</strong> is the study of probability as a mathematical object.</li>
-<li>Probability theory is the foundation of <strong>statistical inference</strong> (i.e., learning from data under uncertainty), a cornerstone of modern data analysis and scientific research.</li>
+<li><strong>Probability theory</strong> is a mathematical framework for inductive reasoning.</li>
+<li>Probability theory is the foundation of <strong>statistical inference</strong> and <strong>causal inference</strong>.</li>
 </ul>
 </section>
 <section id="logic-inductive-vs.-deductive-reasoning" class="level2">
@@ -240,7 +240,6 @@ ul.task-list li input[type="checkbox"] {
 <li><span class="math inline">\(\text{or} \quad \lor\)</span></li>
 <li><span class="math inline">\(\text{not} \quad \lnot\)</span></li>
 <li><span class="math inline">\(\text{if-then} \quad \rightarrow\)</span></li>
-<li></li>
 </ul></li>
 <li>Truth tables:
 <ul>
@@ -303,15 +302,15 @@ ul.task-list li input[type="checkbox"] {
 <p>FUNCTION: <span class="math inline">\(f: X \rightarrow Y\)</span></p>
 <p>INPUT: <span class="math inline">\(x\)</span></p>
 <p>OUTPUT: <span class="math inline">\(y = f(x)\)</span></p>
-<p>A probability model consists of three components: the sample space <span class="math inline">\(\Omega\)</span>, the event space <span class="math inline">\(F\)</span> and the probability measure/distribution <span class="math inline">\(P\)</span>.</p>
-<p>The <strong>sample space</strong> <span class="math inline">\(\Omega\)</span> is the set of all possible outcomes of the random phenomenon/stochastic process being modeled.</p>
+<p>A probabilistic model consists of three components: the sample space <span class="math inline">\(\Omega\)</span>, the event space <span class="math inline">\(F\)</span> and the probability measure/distribution/law <span class="math inline">\(P\)</span>.</p>
+<p>The <strong>sample space</strong> <span class="math inline">\(\Omega\)</span> is the set of outcomes of the random phenomenon/stochastic process/“experiment” being modeled. It must be mutually exclusive and collectively exhaustive and (art) at the right “granularity”.</p>
 <p>The power set of a set <span class="math inline">\(S\)</span> is the set of all subsets of <span class="math inline">\(S\)</span>, including the empty set <span class="math inline">\(\emptyset\)</span> and <span class="math inline">\(S\)</span> itself.</p>
 <p>The <strong>event space</strong> <span class="math inline">\(F\)</span> is the power set of the sample space <span class="math inline">\(\Omega\)</span>.</p>
 <p>An <strong>event</strong> <span class="math inline">\(A\)</span> is a subset of the sample space <span class="math inline">\(\Omega\)</span>:</p>
 <p><span class="math inline">\(A \subseteq \Omega\)</span></p>
 <p>and therefore also an element of the event space <span class="math inline">\(F\)</span>:</p>
 <p><span class="math inline">\(A \in F\)</span></p>
-<p>The probability measure/distribution <span class="math inline">\(P\)</span> is a function from the event space <span class="math inline">\(F\)</span> to the real numbers <span class="math inline">\(\mathbb{R}\)</span>:</p>
+<p>The probability measure/distribution/law <span class="math inline">\(P\)</span> is a function from the event space <span class="math inline">\(F\)</span> to the real numbers <span class="math inline">\(\mathbb{R}\)</span>:</p>
 <p><span class="math inline">\(P : F \rightarrow \mathbb{R}\)</span></p>
 <p><span class="math inline">\(P(A)\)</span> is the probability of event (or proposition) <span class="math inline">\(A\)</span>, i.e., a real number.</p>
 <p>A real number is a number that can be used to measure a continuous one-dimensional quantity such as a length, area, volume, weight and temperature.</p>

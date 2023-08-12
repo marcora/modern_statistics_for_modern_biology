@@ -9,8 +9,8 @@ date: 2023-08-02
 -   **Probability** is the basis for **inductive reasoning** (i.e., reasoning with probabilities).
 -   **Scientific reasoning** is inductive. With a few exceptions (e.g., mathematics and computer programming) nearly all reasoning is inductive.
 -   Unfortunately, humans suffer from "probability blindness" and are often incorrect when reasoning with probabilities.
--   **Probability theory** is the study of probability as a mathematical object.
--   Probability theory is the foundation of **statistical inference** (i.e., learning from data under uncertainty), a cornerstone of modern data analysis and scientific research.
+-   **Probability theory** is a mathematical framework for inductive reasoning.
+-   Probability theory is the foundation of **statistical inference** and **causal inference**.
 
 ## Logic: Inductive vs. deductive reasoning
 
@@ -57,7 +57,6 @@ $$
     -   $\text{or} \quad \lor$
     -   $\text{not} \quad \lnot$
     -   $\text{if-then} \quad \rightarrow$
-    -   
 -   Truth tables:
     -   XXX
 
@@ -111,9 +110,9 @@ INPUT: $x$
 
 OUTPUT: $y = f(x)$
 
-A probability model consists of three components: the sample space $\Omega$, the event space $F$ and the probability measure/distribution $P$.
+A probabilistic model consists of three components: the sample space $\Omega$, the event space $F$ and the probability measure/distribution/law $P$.
 
-The **sample space** $\Omega$ is the set of all possible outcomes of the random phenomenon/stochastic process being modeled.
+The **sample space** $\Omega$ is the set of outcomes of the random phenomenon/stochastic process/"experiment" being modeled. It must be mutually exclusive and collectively exhaustive and (art) at the right "granularity".
 
 The power set of a set $S$ is the set of all subsets of $S$, including the empty set $\emptyset$ and $S$ itself.
 
@@ -127,7 +126,7 @@ and therefore also an element of the event space $F$:
 
 $A \in F$
 
-The probability measure/distribution $P$ is a function from the event space $F$ to the real numbers $\mathbb{R}$:
+The probability measure/distribution/law $P$ is a function from the event space $F$ to the real numbers $\mathbb{R}$:
 
 $P : F \rightarrow \mathbb{R}$
 
