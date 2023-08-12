@@ -7,7 +7,7 @@ date: 2023-08-02
 ## Why study probability?
 
 -   **Probability** is the basis for **inductive reasoning** (i.e., reasoning with probabilities).
--   **Scientific reasoning** is inductive reasoning.
+-   **Scientific reasoning** is inductive. With a few exceptions (e.g., mathematics and computer programming) nearly all reasoning is inductive.
 -   Unfortunately, humans suffer from "probability blindness" and are often incorrect when reasoning with probabilities.
 -   **Probability theory** is the study of probability as a mathematical object.
 -   Probability theory is the foundation of **statistical inference** (i.e., learning from data under uncertainty), a cornerstone of modern data analysis and scientific research.
@@ -15,7 +15,7 @@ date: 2023-08-02
 ## Logic: Inductive vs. deductive reasoning
 
 -   **Logic** is the study of **correct reasoning**.
--   Reasoning is the process of drawing a conclusion from a set of premises.
+-   Reasoning is the process of drawing a conclusion/inference from a set of premises.
 -   Reasoning is put into words in the form of an argument.
 -   An **argument** is a set of statements/propositions; more specifically **a set of premises and a conclusion**.
 
@@ -34,27 +34,36 @@ $$
 $$
 
 -   A statement/proposition is a sentence that asserts a claim that is either true or false based on its correspondence with reality/the state of affairs in the world.
--   In an argument, the premises are the evidence given in support of the conclusion. The conclusion is the statement/proposition that the argument seeks to prove as definitely true (**deductive argument**) or likely true (**inductive argument**) if the premises are true.
+-   In an argument, the premises are the evidence given in support of the conclusion. The conclusion is the statement/proposition that the argument seeks to prove as definitely true (**deductive argument**) or likely true (**inductive argument**) if all premises are true.
+-   If it is impossible for the premises to all be true and the conclusion still be false, then the argument is deductive.
+-   If it is possible for the premises to all be true and the conclusion still be false, then the argument is inductive.
+-   In an inductive argument (e.g., an inductive generalization, a causal argument, or reasoning by analogy), the conclusion follows from the premises with likelihood/probability, never with certainty.
+-   An inductive argument is defeasable, i.e., subject to revision (conclusion becomes more or less likely/probable) in light of new evidence.
 
 [![](/images/reasoning_flowchart.png)](https://youtu.be/6Sg9zI-GNsI)
 
--   A **valid deductive argument** guarantees a definitely true conclusion if the premises are true, i.e., in valid deductive argument the premises fully entail the conclusion. When the premises are true and the deductive argument is valid, it is also **sound**.
--   A **strong inductive argument** guarantees a likely true conclusion if the premises are true, i.e., in a strong inductive argument the premises partially entail the conclusion. When the premises are true and the inductive argument is strong, it is also **cogent**.
+-   A **valid deductive argument** guarantees a definitely true conclusion if all premises are true, i.e., in valid deductive argument the premises fully entail the conclusion. When all premises are true and the deductive argument is valid, it is also **sound**.
+-   A **strong inductive argument** guarantees a likely true conclusion if all premises are true, i.e., in a strong inductive argument the premises partially entail the conclusion. When all premises are true and the inductive argument is strong, it is also **cogent**.
 -   How likely is the conclusion given the premises? Probability theory can help us find the answer!
--   How likely does the conclusion need to be before it's rational to accept it? Decision theory (e.g., cost-benefit analysis) can help us find the answer!
+-   How likely does the conclusion need to be before it's rational to accept it? Decision theory can help us find the answer!
 
 ## Logical operators and truth tables
 
--   Statements/propositions can be combined using logical operators:
-    -   AND
-    -   OR
-    -   NOT
+-   A statement/proposition is simple if it cannot be broken down into other statements/propositions.
+-   A statement/proposition is composite if it comprises multiple simple or composite statements/propositions connected by logical operators.
+-   A logical operator is a symbol or word used to connect two or more statements/propositions.
+-   Commonly used logical operators:
+    -   $\text{and} \quad \land$
+    -   $\text{or} \quad \lor$
+    -   $\text{not} \quad \lnot$
+    -   $\text{if-then} \quad \rightarrow$
+    -   
 -   Truth tables:
     -   XXX
 
 ## Probability: Proposition vs. event language
 
-Two ways of asking the same question:
+When using inductive reasoning to answer a probabilistic question, there are two ways of asking the same question:
 
 1.  *"What is the probability that the coin will land heads?"*
     -   **Proposition**: *"the coin will land heads"*

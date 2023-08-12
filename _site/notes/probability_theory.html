@@ -182,7 +182,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="why-study-probability">Why study probability?</h2>
 <ul>
 <li><strong>Probability</strong> is the basis for <strong>inductive reasoning</strong> (i.e., reasoning with probabilities).</li>
-<li><strong>Scientific reasoning</strong> is inductive reasoning.</li>
+<li><strong>Scientific reasoning</strong> is inductive. With a few exceptions (e.g., mathematics and computer programming) nearly all reasoning is inductive.</li>
 <li>Unfortunately, humans suffer from “probability blindness” and are often incorrect when reasoning with probabilities.</li>
 <li><strong>Probability theory</strong> is the study of probability as a mathematical object.</li>
 <li>Probability theory is the foundation of <strong>statistical inference</strong> (i.e., learning from data under uncertainty), a cornerstone of modern data analysis and scientific research.</li>
@@ -192,7 +192,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="logic-inductive-vs.-deductive-reasoning">Logic: Inductive vs.&nbsp;deductive reasoning</h2>
 <ul>
 <li><strong>Logic</strong> is the study of <strong>correct reasoning</strong>.</li>
-<li>Reasoning is the process of drawing a conclusion from a set of premises.</li>
+<li>Reasoning is the process of drawing a conclusion/inference from a set of premises.</li>
 <li>Reasoning is put into words in the form of an argument.</li>
 <li>An <strong>argument</strong> is a set of statements/propositions; more specifically <strong>a set of premises and a conclusion</strong>.</li>
 </ul>
@@ -210,7 +210,11 @@ ul.task-list li input[type="checkbox"] {
 \]</span></p>
 <ul>
 <li>A statement/proposition is a sentence that asserts a claim that is either true or false based on its correspondence with reality/the state of affairs in the world.</li>
-<li>In an argument, the premises are the evidence given in support of the conclusion. The conclusion is the statement/proposition that the argument seeks to prove as definitely true (<strong>deductive argument</strong>) or likely true (<strong>inductive argument</strong>) if the premises are true.</li>
+<li>In an argument, the premises are the evidence given in support of the conclusion. The conclusion is the statement/proposition that the argument seeks to prove as definitely true (<strong>deductive argument</strong>) or likely true (<strong>inductive argument</strong>) if all premises are true.</li>
+<li>If it is impossible for the premises to all be true and the conclusion still be false, then the argument is deductive.</li>
+<li>If it is possible for the premises to all be true and the conclusion still be false, then the argument is inductive.</li>
+<li>In an inductive argument (e.g., an inductive generalization, a causal argument, or reasoning by analogy), the conclusion follows from the premises with likelihood/probability, never with certainty.</li>
+<li>An inductive argument is defeasable, i.e., subject to revision (conclusion becomes more or less likely/probable) in light of new evidence.</li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -218,20 +222,25 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <ul>
-<li>A <strong>valid deductive argument</strong> guarantees a definitely true conclusion if the premises are true, i.e., in valid deductive argument the premises fully entail the conclusion. When the premises are true and the deductive argument is valid, it is also <strong>sound</strong>.</li>
-<li>A <strong>strong inductive argument</strong> guarantees a likely true conclusion if the premises are true, i.e., in a strong inductive argument the premises partially entail the conclusion. When the premises are true and the inductive argument is strong, it is also <strong>cogent</strong>.</li>
+<li>A <strong>valid deductive argument</strong> guarantees a definitely true conclusion if all premises are true, i.e., in valid deductive argument the premises fully entail the conclusion. When all premises are true and the deductive argument is valid, it is also <strong>sound</strong>.</li>
+<li>A <strong>strong inductive argument</strong> guarantees a likely true conclusion if all premises are true, i.e., in a strong inductive argument the premises partially entail the conclusion. When all premises are true and the inductive argument is strong, it is also <strong>cogent</strong>.</li>
 <li>How likely is the conclusion given the premises? Probability theory can help us find the answer!</li>
-<li>How likely does the conclusion need to be before it’s rational to accept it? Decision theory (e.g., cost-benefit analysis) can help us find the answer!</li>
+<li>How likely does the conclusion need to be before it’s rational to accept it? Decision theory can help us find the answer!</li>
 </ul>
 </section>
 <section id="logical-operators-and-truth-tables" class="level2">
 <h2 class="anchored" data-anchor-id="logical-operators-and-truth-tables">Logical operators and truth tables</h2>
 <ul>
-<li>Statements/propositions can be combined using logical operators:
+<li>A statement/proposition is simple if it cannot be broken down into other statements/propositions.</li>
+<li>A statement/proposition is composite if it comprises multiple simple or composite statements/propositions connected by logical operators.</li>
+<li>A logical operator is a symbol or word used to connect two or more statements/propositions.</li>
+<li>Commonly used logical operators:
 <ul>
-<li>AND</li>
-<li>OR</li>
-<li>NOT</li>
+<li><span class="math inline">\(\text{and} \quad \land\)</span></li>
+<li><span class="math inline">\(\text{or} \quad \lor\)</span></li>
+<li><span class="math inline">\(\text{not} \quad \lnot\)</span></li>
+<li><span class="math inline">\(\text{if-then} \quad \rightarrow\)</span></li>
+<li></li>
 </ul></li>
 <li>Truth tables:
 <ul>
@@ -241,7 +250,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="probability-proposition-vs.-event-language" class="level2">
 <h2 class="anchored" data-anchor-id="probability-proposition-vs.-event-language">Probability: Proposition vs.&nbsp;event language</h2>
-<p>Two ways of asking the same question:</p>
+<p>When using inductive reasoning to answer a probabilistic question, there are two ways of asking the same question:</p>
 <ol type="1">
 <li><em>“What is the probability that the coin will land heads?”</em>
 <ul>
