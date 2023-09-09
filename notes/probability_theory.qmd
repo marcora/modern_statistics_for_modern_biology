@@ -6,10 +6,10 @@ date: 2023-08-02
 
 ## Why study probability?
 
--   **Probability** is the basis for **inductive reasoning** (i.e., reasoning with probabilities).
+-   **Probability** is the foundation of **inductive reasoning** (i.e., reasoning with probabilities).
 -   **Scientific reasoning** is inductive. With a few exceptions (e.g., mathematics and computer programming) nearly all reasoning is inductive.
 -   Unfortunately, humans suffer from "probability blindness" and are often incorrect when reasoning with probabilities.
--   **Probability theory** is a mathematical framework for inductive reasoning.
+-   **Probability theory** is a mathematical framework for correct inductive reasoning.
 -   Probability theory is the foundation of **statistical inference** and **causal inference**.
 
 ## Logic: Inductive vs. deductive reasoning
@@ -95,6 +95,7 @@ When using inductive reasoning to answer a probabilistic question, there are two
     -   Union: $A \cup B = \{ x : x \in A \lor x \in B \}$
     -   Intersection: $A \cap B = \{ x : x \in A \land x \in B \}$
     -   Complement: $A^\complement = \{ x : x \notin A \}$
+-   Two sets $A$ and $B$ are said to be disjoint if they have no element in common. Equivalently, they are said to be disjoint if their intersection is the empty set, i.e., $A \cap B = \emptyset$. For example, $\{ 1, 2, 3 \}$ and $\{ 4, 5, 6 \}$ are disjoint sets*,* while $\{ 1, 2, 3 \}$ and $\{ 3, 4, 5 \}$ are not disjoint sets. Two or more sets $A_1, A_2, \ldots$ are said to be disjoint if any two sets are disjoint.
 
 ## Probability as a mathematical object
 
@@ -102,7 +103,7 @@ Probability theory is the study of probability as a mathematical object.
 
 Probability as a function that satisfies the axioms of probability.
 
-In mathematics, a function is an assignment of an element $y$ of a set $Y$ to each element $x$ of a set $X$.
+In mathematics, a function is an assignment/mapping of an element $y$ of a set $Y$ to each element $x$ of a set $X$.
 
 FUNCTION: $f: X \rightarrow Y$
 
@@ -110,43 +111,43 @@ INPUT: $x$
 
 OUTPUT: $y = f(x)$
 
-A probabilistic model consists of three components: the sample space $\Omega$, the event space $F$ and the probability measure/distribution/law $P$.
+A probabilistic model consists of three components: the sample space $S$, the event space $E$, and the probability function $P$.
 
-The **sample space** $\Omega$ is the set of outcomes of the random phenomenon/stochastic process/"experiment" being modeled. It must be mutually exclusive and collectively exhaustive and (art) at the right "granularity".
+The **sample space** $S$ is the set of outcomes of the "experiment" (random phenomenon/stochastic process) being modeled. Outcomes in the sample space must be mutually exclusive and collectively exhaustive and \[art\] at the right "granularity".
 
 The power set of a set $S$ is the set of all subsets of $S$, including the empty set $\emptyset$ and $S$ itself.
 
-The **event space** $F$ is the power set of the sample space $\Omega$.
+The **event space** $E$ is the power set of the sample space $S$.
 
-An **event** $A$ is a subset of the sample space $\Omega$:
+An **event** $A$ is a subset of the sample space $S$:
 
-$A \subseteq \Omega$
+$A \subseteq S$
 
-and therefore also an element of the event space $F$:
+and therefore also an element of the event space $E$:
 
-$A \in F$
+$A \in E$
 
-The probability measure/distribution/law $P$ is a function from the event space $F$ to the real numbers $\mathbb{R}$:
+$P$ is a function from the event space $E$ to the real numbers $\mathbb{R}$:
 
-$P : F \rightarrow \mathbb{R}$
+$P : E \rightarrow \mathbb{R}$
 
 $P(A)$ is the probability of event (or proposition) $A$, i.e., a real number.
 
-A real number is a number that can be used to measure a continuous one-dimensional quantity such as a length, area, volume, weight and temperature.
+A real number is a number that can be used to measure a continuous one-dimensional quantity such as a length, area, volume, mass and temperature.
 
 $P(A)$ is a measure of uncertainty, i.e., the likelihood that event $A$ will occur or that proposition $A$ is true.
 
 ## The axioms of probability
 
-Probability as a function $P : F \rightarrow \mathbb{R}$ must satisfy a number of axioms (Kolmogorov axioms; see also [Cox's theorem](https://en.wikipedia.org/wiki/Cox%27s_theorem) for an alternative formulation):
+Probability is any function $P : E \rightarrow \mathbb{R}$ that satisfies the following axioms (Kolmogorov axioms; see also [Cox's theorem](https://en.wikipedia.org/wiki/Cox%27s_theorem) as an alternative):
 
--   $P(A) \ge 0 \quad \forall A \in F$
--   $P(\Omega) = 1$
--   $\text{if} \quad A_1, A_2, \ldots, A_n \ \text{are disjoint/mutually exclusive events} \quad \text{then} \quad P(\cup_{i=1}^n A_i) = \sum_{i=1}^n P(A_i)$
+-   $P(A) \ge 0 \quad \forall A \in E$
+-   $P(S) = 1$
+-   $\text{if} \quad A_1, A_2, \ldots \ \text{are disjoint sets/mutually exclusive events} \quad \text{then} \quad P(\cup_{i=1}^{\infty} A_i) = \sum_{i=1}^{\infty} P(A_i)$
 
-All rules of probability are derived from these axioms, for example:
+All other rules/properties of any probability function P are derived from these axioms, for example:
 
-$0 \le P(A) \le 1 \quad \forall A \in F$
+$0 \le P(A) \le 1 \quad \forall A \in E$
 
 $P(\emptyset) = 0$
 
@@ -156,72 +157,72 @@ $\text{if} \quad A \subseteq B \quad \text{then} \quad P(A) \le P(B)$
 
 Consider a single coin toss and assume that the coin will either land heads ($H$) or tails ($T$) (but not both):
 
-$\Omega = \{H, T\}$
+$S = \{H, T\}$
 
-$F = \{ \emptyset, \{H\}, \{T\}, \{H,T\} \}$
+$E = \{ \emptyset, \{H\}, \{T\}, \{H,T\} \}$
 
 If we assume that the coin is fair (i.e., it has equal probability of landing heads or tails):
 
 $P(\emptyset) = 0$
 
-$P(\{H,T\}) = P(\Omega) = 1$
+$P(\{H,T\}) = P(S) = 1$
 
 $P(\{H,T\}) = P(\{H\}) + P(\{T\}) = 1$
 
 $P(\{H\}) = P(\{T\}) = 0.5$
 
-## Mutually exclusive/disjoint events
+## Mutually exclusive events
 
-$P(A\ \text{and}\ B) = 0$
+If $A$ and $B$ are disjoint sets then they are said to be mutually exclusive events, i.e., events/propositions that cannot occur/be true at the same time. For example, when you toss a coin, you can only get heads or tails, but not both.
 
-## Independent events
+If $A$ and $B$ are mutually exclusive events, then:
 
-$P(A \mid B) = P(A)$
+$P(A\ \cap \ B) = P(\emptyset) = 0$
 
 ## The rules of probability
 
 ### Negation
 
-$P(\text{not-}A) = 1 - P(A)$
+$P(A^{\complement}) = 1 - P(A)$
 
-Alternative notation for $P(\text{not-}A)$:
+Alternative notation for $P(A^{\complement})$:
 
+-   $P(\text{not-}A)$
 -   $P(A')$
--   $P(A^\complement)$
 -   $P(\overline{A})$
 -   $P(\lnot A)$
 
 ### Disjunction (sum/addition rule)
 
-$P(A\ \text{or}\ B) = P(A) + P(B) - P(A\ \text{and}\ B)$
+$P(A \cup B) = P(A) + P(B) - P(A \cap B)$
 
-Alternative notation for $P(A\ \text{or}\ B)$:
+Alternative notation for $P(A \cup B)$:
 
--   $P(A \cup B)$
+-   $P(A\ \text{or}\ B)$
 
-If $A$ and $B$ are mutually exclusive/disjoint events: $P(A \cup B) = P(A) + P(B)$
+If $A$ and $B$ are mutually exclusive events, then $P(A \cup B) = P(A) + P(B)$
 
 The disjunction rule is commutative: $P(A \cup B) = P(B \cup A)$
 
-### Conjunction (product/multiplication rule)
-
-$P(A\ \text{and} \ B) = P(A) \times P(B \mid A)$
-
-Alternative notation for $P(A\ \text{and} \ B)$:
-
--   $P(AB)$
--   $P(A,B)$
--   $P(A \cap B)$
-
-If $A$ and $B$ are independent events: $P(A \cap B) = P(A) \times P(B)$
-
-The conjunction rule is commutative: $P(A \cap B) = P(B \cap A)$
-
 ## Conditional probability
 
-$P(A \mid B) = \frac{P(A\ \text{and}\ B)}{P(B)}$
+$P(A \mid B) = \frac{P(A \cap B)}{P(B)}$
 
 $P(A \mid B) \ne P(B \mid A)$
+
+### Conjunction (product/multiplication rule)
+
+$P(A \cap B) = P(A) \cdot P(B \mid A)$
+
+Alternative notation for $P(A \cap B)$:
+
+-   $P(A\ \text{and} \ B)$
+-   $P(A,B)$
+-   $P(AB)$
+
+If $A$ and $B$ are independent events, then $P(A \cap B) = P(A) \cdot P(B)$
+
+The conjunction rule is commutative: $P(A \cap B) = P(B \cap A)$
 
 ## Inverse probability: Bayes' theorem (or Bayes' rule)
 
